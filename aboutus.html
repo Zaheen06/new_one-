@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Infinity Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1E3C72', // Deep Blue
+                        'secondary-blue': '#2A5298', // Medium Blue
+                        'accent-yellow': '#FFC107', // Warm Yellow for buttons/highlights
+                        'light-bg': '#F8F9FA', // Light Grey background
+                        'navy-header': '#212529', // Dark Grey for text
+                        'dark-bg': '#1e3a8a', // Keep for footer if needed, or update later
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background: url('https://placehold.co/1200x500/e2e8f0/e2e8f0?text=') no-repeat center center;
+            background-size: cover;
+        }
+        .curved-bg {
+            background-color: #e6f7ff;
+            border-bottom-left-radius: 50% 20%;
+            border-bottom-right-radius: 50% 20%;
+        }
+         .circle-element {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: #d1e8e2;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .circle-element {
+                width: 300px;
+                height: 300px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-8 w-auto"></a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-navy-header hover:text-primary-blue transition duration-150">Home</a>
+                <a href="#" class="text-primary-blue font-semibold">About Us</a>
+                <a href="#" class="text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
+                <a href="pre-construction.html" class="text-navy-header hover:text-primary-blue transition duration-150">Pre-construction</a>
+                <a href="execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
+                <a href="post_execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Post-construction</a>
+                <a href="#" class="text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
+                <a href="#" class="text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
+                <a href="#" class="text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
+                <a href="#" class="text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Home</a>
+            <a href="#" class="block text-primary-blue font-semibold">About Us</a>
+            <a href="#" class="block text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
+            <a href="pre-construction.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Pre-construction</a>
+            <a href="execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
+            <a href="post_execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Post-construction</a>
+            <a href="#" class="block text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
+            <a href="#" class="block text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
+            <a href="#" class="block text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
+            <a href="#" class="block text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section h-96 border-y-4 border-blue-500 flex items-center justify-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-700 bg-white bg-opacity-75 p-4 rounded-lg">BACKGROUND IMAGE</h1>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="py-16 px-4">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h2 class="text-2xl font-bold mb-4">Infinity Group – You Dream, We Build</h2>
+                <p class="text-gray-600 mb-6">Infinity Group is not just a name, but a vision that aims to bridge the gap between engineering education and real-world application. We provide a unique and comprehensive platform where students are encouraged to develop not only their technical knowledge but also the right attitude, problem-solving ability, and practical skills that are essential to succeed in today's competitive world.</p>
+                <h3 class="text-xl font-semibold mb-2">Our philosophy is simple yet powerful:</h3>
+                <p class="text-gray-600 mb-6 flex items-center justify-center">
+                    <span class="text-blue-500 mr-2 text-2xl">◆◆</span> Learning should not be limited to classrooms; it should be applied to create solutions, opportunities, and impact.
+                </p>
+                <p class="text-gray-600">Infinity Group believes that every student has the potential to become an innovator, leader, and change-maker when given the right guidance and exposure.</p>
+            </div>
+        </section>
+
+
+        <!-- Legacy and Vision Section -->
+        <section class="py-20 bg-gray-50 curved-bg">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center justify-around gap-12">
+                    <div class="md:w-1/2 text-gray-700">
+                        <h2 class="text-3xl font-bold mb-6">Infinity Group's Legacy & Goals</h2>
+                        <p class="mb-4">"For 10 years, Infinity Group has been a trusted name in the Construction Industry, renowned for delivering projects of exceptional quality, innovation, and sustainability. Our journey began with a simple yet profound idea: to bridge the gap into the realms of education, inspiration, and social entrepreneurship—creating a foundation not just for structures, but for dreams, aspirations, and a better future."</p>
+                        <h3 class="text-xl font-semibold mb-3">Our mission is to:</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Provide hands-on learning experiences to engineering students.</li>
+                            <li>Strengthen both technical knowledge and practical application skills.</li>
+                            <li>Encourage a problem-solving mindset and the ability to tackle real-world challenges.</li>
+                            <li>Create a collaborative ecosystem of industry experts, mentors, and peers.</li>
+                            <li>Inspire students to think beyond employment and explore entrepreneurship.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center">
+                        <div class="circle-element text-gray-700">
+                            <h3 class="text-2xl font-bold mb-4 text-center">Why Infinity Group?</h3>
+                            <ul class="space-y-3">
+                                <li>For engineering students, we're more than a firm or an institution. We're a platform for transformation. Here, you will:</li>
+                                <li>Gain practical, hands-on field experience.</li>
+                                <li>Develop practical skills alongside academic learning.</li>
+                                <li>Work on real projects and solve real-world problems.</li>
+                                <li>Get opportunities to connect with industry experts, leaders, and mentors.</li>
+                                <li>Build the confidence to turn your ideas into impactful solutions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visionary Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 text-center">
+                        <img src="https://placehold.co/300x400/cccccc/333333?text=Mr.+Patil" alt="Mr. Sampath S. Patil" class="rounded-lg shadow-lg mx-auto mb-4">
+                        <h3 class="text-xl font-bold">Mr. Sampath S. Patil</h3>
+                        <p class="text-gray-500">B. E (CIVIL) M. Tech (STRUCTURAL)
+                        <br>Founder, INFINITY GROUP</p>
+                    </div>
+                    <div class="md:w-2/3 text-gray-700">
+                        <h2 class="text-3xl font-bold mb-4">The Visionary Behind Infinity Group – Mr. Sampath S. Patil</h2>
+                        <p class="mb-4">Infinity Group was founded by Mr. Sampath S. Patil, a Civil Engineer, Entrepreneur, Innovator, and Social Worker from Belgaum, Karnataka.</p>
+                        <h4 class="font-bold mb-2">Academic Background</h4>
+                        <p class="mb-4">Mr. Sampath completed his B.E. in Civil Engineering from Gogte Institute of Engineering, Belgaum, followed by an M.Tech in Structural Engineering from Gogte Institute of Technology, Belgaum. His strong academic foundation combined with a passion for social development laid the groundwork for what Infinity Group is today.</p>
+                        <h4 class="font-bold mb-2">Awards & Recognitions</h4>
+                         <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li>Mr. Sampath's work has been recognized at both national and international platforms.</li>
+                            <li>"Best Leader" award at Indian Student Parliament in Pune and "Best Model Village" award for his work in social development, including his contribution to the Adarsh Gram Yojana at Modage Village.</li>
+                            <li>Recognized as the "Best Leader" by Deshonnati, Infosys and Mr. Shankar Bidari (Former Commissioner, Police) at Hubli.</li>
+                            <li>Felicitated by "Kannada Sahitya Parishath" for his contributions to social welfare and successful rural development projects in Belgaum.</li>
+                            <li>Recognized at the "Visvesvaraya Technical University Youth Festival" in Bangalore for innovative ideas, with special appreciation from Dr. Ganesh Devdas (Former S. Min., Jaiprakash Narayan (Founder), Deshpande Foundation).</li>
+                         </ul>
+                        <h4 class="font-bold mb-2">Contribution & Mission</h4>
+                        <p class="mb-4">His life has been dedicated to a mission with two faces:<br>1. Social Impact - Solving Rural problems, uplifting communities, and creating sustainable ecosystems. <br>2. Student Development - Guiding students to improve their skills, find the right job opportunities, and explore entrepreneurial possibilities.</p>
+                         <p>His ultimate goal is to transform students from job seekers into job providers—nurturing a generation of engineers who innovate, lead, and contribute to society.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Promise Section -->
+        <section class="py-16 bg-gray-50">
+             <div class="container mx-auto text-center max-w-4xl px-4">
+                <h2 class="text-3xl font-bold mb-4">Our Promise</h2>
+                <p class="text-gray-600 mb-6">At Infinity Group, we can't build futures—we challenge you to design your futures. We don't just deliver projects—we deliver opportunities. We don't just train engineers—we nurture the next generation of innovators and change-makers.</p>
+                <p class="text-gray-700 font-semibold flex items-center justify-center">
+                   <span class="text-blue-500 mr-2 text-2xl">◆</span> Infinity Group is where engineering meets innovation, where learning meets application, and where dreams turn into reality.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-blue text-gray-300 py-12 md:py-16 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <!-- Company Info / Logo -->
+                <div class="col-span-2 lg:col-span-1">
+                    <a href="#home" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <p class="text-sm text-gray-400">
+                        Building dreams, creating realities. Your trusted partner in construction and infrastructure development.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">About Us</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Achievements</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
+                        <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
+                        <li><a href="post_execution.html" class="hover:text-accent-yellow transition duration-150">Post-construction</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Projects</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
+                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; 2023 INFINITY GROUP. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
