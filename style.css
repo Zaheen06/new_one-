@@ -1,0 +1,108 @@
+/* Common styles from all files */
+
+/* Custom scroll behavior for smooth navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Expanded .benefit-icon style (from @apply in Tailwind) */
+.benefit_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    color: rgb(255 255 255);
+    margin-right: 0.75rem;
+}
+
+/* Styles specific to aboutus.html */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero_section {
+    background: url('https://placehold.co/1200x500/e2e8f0/e2e8f0?text=') no-repeat center center;
+    background-size: cover;
+}
+
+.curved_bg {
+    background-color: #e6f7ff;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.circle_element {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #d1e8e2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .circle_element {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+}
+
+/* Responsive timeline dots for mobile view (expanded from @apply) */
+@media (max-width: 640px) {
+    .timeline_dot_mobile {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        /* Added to ensure vertical centering of the marker */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Additional variation for timeline-dot-mobile in some files */
+@media (max-width: 640px) {
+    .timeline_dot_mobile_left4 {
+        left: 4px;
+    }
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #212529;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f9fa;
+    color: #1E3C72;
+}

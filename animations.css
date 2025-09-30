@@ -1,0 +1,44 @@
+/* Animations and hover effects for home page */
+
+/* Fade-in animation for sections */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Hover scale and shadow for service cards */
+.service-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(30, 60, 114, 0.4);
+}
+
+/* Hover effect for buttons */
+.button-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-hover:hover {
+    background-color: #2a5298; /* secondary blue */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Smooth transition for hero image */
+.hero-image {
+    transition: transform 0.5s ease;
+}
+.hero-image:hover {
+    transform: scale(1.05) rotate(1deg);
+}

@@ -26,35 +26,41 @@
             }
         }
     </script>
-    <style>
-        /* Custom scroll behavior for smooth navigation */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Style for the benefit icons */
-        .benefit-icon {
-            @apply flex items-center justify-center w-8 h-8 rounded-full text-white mr-3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body class="bg-light-bg font-sans text-navy-header">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-8 w-auto"></a>
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="#home" class="text-primary-blue font-semibold">Home</a>
-                <a href="aboutus.html" class="text-navy-header hover:text-primary-blue transition duration-150">About Us</a>
-                <a href="#achievements" class="text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
-                <a href="pre-construction.html" class="text-navy-header hover:text-primary-blue transition duration-150">Pre-construction</a>
-                <a href="execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
-                <a href="post_execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Post-construction</a>
-                <a href="#careers" class="text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
-                <a href="#feedback" class="text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
-                <a href="#contact" class="text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
-                <a href="#gallery" class="text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
-            </div>
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-14 w-auto"></a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-primary-blue font-semibold">Home</a>
+                    <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                      <a href="aboutus.html">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#achievements">Achievements</a>
+                            <a href="#gallery">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                        Construction
+                        <div class="dropdown-content">
+                            <a href="pre-construction.html">Pre-construction</a>
+                            <a href="execution.html">Execution</a>
+                            <a href="post_execution.html">Post-construction</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                        Contact Us
+                        <div class="dropdown-content">
+                            <a href="#contact">Get In Touch</a>
+                            <a href="#feedback">Feedback</a>
+                        </div>
+                    </div>
+                    <a href="#careers" class="text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
+                </div>
             <button id="mobile-menu-button" class="md:hidden flex items-center">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
@@ -62,15 +68,29 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="#home" class="block text-primary-blue font-semibold">Home</a>
-            <a href="aboutus.html" class="block text-navy-header hover:text-primary-blue transition duration-150">About Us</a>
-            <a href="#achievements" class="block text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
-            <a href="pre-construction.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Pre-construction</a>
-            <a href="execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
-            <a href="post_execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Post-construction</a>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                About Us
+                <div class="dropdown-content">
+                    <a href="#achievements">Achievements</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                Construction
+                <div class="dropdown-content">
+                    <a href="pre-construction.html">Pre-construction</a>
+                    <a href="execution.html">Execution</a>
+                    <a href="post_execution.html">Post-construction</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                Contact Us
+                <div class="dropdown-content">
+                    <a href="#contact">Get In Touch</a>
+                    <a href="#feedback">Feedback</a>
+                </div>
+            </div>
             <a href="#careers" class="block text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
-            <a href="#feedback" class="block text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
-            <a href="#contact" class="block text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
-            <a href="#gallery" class="block text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
         </div>
     </header>
 
@@ -86,10 +106,10 @@
                         <p class="mt-4 text-gray-600 max-w-md">Your trusted partner in all construction endeavors. We turn visions into tangible, enduring structures.</p>
                     </div>
                     <!-- Placeholder Image (mimicking the one in the screenshot) -->
-                    <div class="aspect-video overflow-hidden rounded-xl shadow-2xl">
+                    <div class="aspect-video overflow-hidden rounded-xl shadow-2xl hero-image">
                         <img src="https://placehold.co/1200x800/1E3C72/ffffff?text=Construction+Site"
-                             alt="Large image of a modern construction project" 
-                             class="w-full h-full object-cover">
+                             alt="Large image of a modern construction project"
+                             class="h-full object-cover mx-auto max-w-full">
                     </div>
                 </div>
 
@@ -99,7 +119,7 @@
                     <div class="space-y-5">
                         <!-- Benefit 1: Trust -->
                         <div class="flex items-start">
-                            <div class="benefit-icon bg-accent-yellow">
+                            <div class="benefit_icon bg-accent-yellow">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002 12c0 2.514.809 4.819 2.182 6.757A13.012 13.012 0 0012 22c2.19 0 4.238-.567 6.096-1.554A13.01 13.01 0 0022 12c0-2.514-.809-4.819-2.182-6.757z"></path></svg>
                             </div>
                             <div>
@@ -109,7 +129,7 @@
                         </div>
                         <!-- Benefit 2: Expert Team -->
                         <div class="flex items-start">
-                            <div class="benefit-icon bg-orange-500">
+                            <div class="benefit_icon bg-orange-500">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-3H17v3zM5 20h5v-3H5v3zM11 7H8v10h3V7zM16 7h-3v10h3V7z"></path></svg>
                             </div>
                             <div>
@@ -119,7 +139,7 @@
                         </div>
                         <!-- Benefit 3: Quality Delivery -->
                         <div class="flex items-start">
-                            <div class="benefit-icon bg-teal-500">
+                            <div class="benefit_icon bg-teal-500">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h-2m2 0c1.076-2.5 1.076-5.5 0-8M12 10v6m0-6c-1.076-2.5-1.076-5.5 0-8M12 16h2m-2 0c-1.076 2.5-1.076 5.5 0 8M12 16h-2m2 0c1.076 2.5 1.076 5.5 0 8M12 10h2m-2 0c-1.076-2.5-1.076-5.5 0-8"></path></svg>
                             </div>
                             <div>
@@ -129,7 +149,7 @@
                         </div>
                         <!-- Benefit 4: Safety -->
                         <div class="flex items-start">
-                            <div class="benefit-icon bg-green-500">
+                            <div class="benefit_icon bg-green-500">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.333-2 3.333-2 3.333v2.334c0 1.104.896 2 2 2s2-.896 2-2v-2.334c0 0-2-2-2-3.333zM12 5a2 2 0 100 4 2 2 0 000-4z"></path></svg>
                             </div>
                             <div>
@@ -139,7 +159,7 @@
                         </div>
                         <!-- Benefit 5: 24/7 Support -->
                         <div class="flex items-start">
-                            <div class="benefit-icon bg-purple-500">
+                            <div class="benefit_icon bg-purple-500">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm6.5 11a.5.5 0 01-.5-.5v-5a.5.5 0 011 0v5a.5.5 0 01-.5.5zM12 16a.5.5 0 01-.5-.5v-5a.5.5 0 011 0v5a.5.5 0 01-.5.5zM15.5 16a.5.5 0 01-.5-.5v-5a.5.5 0 011 0v5a.5.5 0 01-.5.5z"></path></svg>
                             </div>
                             <div>
@@ -182,31 +202,31 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service 1: Pre-Construction -->
-                <div class="p-6 text-center rounded-xl bg-white shadow-xl border border-gray-100 hover:shadow-2xl transition duration-300">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-blue/10 text-primary-blue mb-4">
+                <div class="p-6 text-center rounded-xl bg-white shadow-xl border border-gray-100 service-card-hover">
+                    <a href="pre-construction.html" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-blue/10 text-primary-blue mb-4 hover:bg-purple-400 hover:scale-110 transition-all duration-300">
                         <!-- Icon: Pencil/Drafting -->
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
-                    </div>
+                    </a>
                     <h3 class="text-xl font-bold text-navy-header">Pre-Construction</h3>
                     <p class="text-sm text-gray-500 mt-2">Comprehensive design, conceptualization, and project feasibility studies.</p>
                 </div>
 
                 <!-- Service 2: Execution -->
-                <div class="p-6 text-center rounded-xl bg-white shadow-xl border border-gray-100 hover:shadow-2xl transition duration-300">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/10 text-purple-600 mb-4">
+                <div class="p-6 text-center rounded-xl bg-white shadow-xl border border-gray-100 service-card-hover">
+                    <a href="execution.html" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/10 text-purple-600 mb-4 hover:bg-purple-400 hover:scale-110 transition-all duration-300">
                         <!-- Icon: Crane/Building -->
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"></path></svg>
-                    </div>
+                    </a>
                     <h3 class="text-xl font-bold text-navy-header">Execution</h3>
                     <p class="text-sm text-gray-500 mt-2">Rigorous construction execution, efficient resource allocation, and quality materials sourcing.</p>
                 </div>
 
                 <!-- Service 3: Post Construction -->
-                <div class="p-6 text-center rounded-xl bg-white shadow-xl border border-gray-100 hover:shadow-2xl transition duration-300">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pink-500/10 text-pink-600 mb-4">
+                <div class="p-6 text-center rounded-xl bg-white shadow-xl border border-gray-100 service-card-hover">
+                    <a href="post_execution.html" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pink-500/10 text-pink-600 mb-4 hover:bg-purple-400 hover:scale-110 transition-all duration-300">
                         <!-- Icon: Wrench/Maintenance -->
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.945 3.31.83 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.945 1.543-.83 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.945-3.31-.83-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.945-1.543.83-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    </div>
+                    </a>
                     <h3 class="text-xl font-bold text-navy-header">Post Construction</h3>
                     <p class="text-sm text-gray-500 mt-2">Ongoing quality support and facility management to ensure long-term value and reliability.</p>
                 </div>
@@ -271,7 +291,6 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>

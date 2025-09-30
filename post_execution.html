@@ -26,45 +26,39 @@
             }
         }
     </script>
-    <!-- Custom styles using @apply MUST be inside this specific tag for the CDN to process them -->
-    <style type="text/tailwindcss">
-        /* Style for the benefit icons - kept for general utility, though not used on this specific page yet */
-        .benefit-icon {
-            @apply flex items-center justify-center w-8 h-8 rounded-full text-white mr-3;
-        }
-
-        /* Responsive timeline dots for mobile view */
-        @media (max-width: 640px) {
-            .timeline-dot-mobile {
-                /* Ensures dot stays centered on the left vertical line for mobile view */
-                @apply absolute top-0 left-4 transform -translate-x-1/2; 
-            }
-        }
-    </style>
-    <style>
-        /* Custom scroll behavior for smooth navigation (Can stay outside the Tailwind block as it doesn't use @apply) */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light-bg font-sans text-navy-header">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-8 w-auto"></a>
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-14 w-auto"></a>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-navy-header hover:text-primary-blue transition duration-150">Home</a>
-                <a href="aboutus.html" class="text-navy-header hover:text-primary-blue transition duration-150">About Us</a>
-                <a href="#achievements" class="text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
-                <a href="pre-construction.html" class="text-navy-header hover:text-primary-blue transition duration-150">Pre-construction</a>
-                <a href="execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
-                <a href="#post-construction" class="text-primary-blue font-semibold">Post-construction</a>
+                <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                    About Us
+                    <div class="dropdown-content">
+                        <a href="#achievements">Achievements</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                </div>
+                <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                    Construction
+                    <div class="dropdown-content">
+                        <a href="pre-construction.html">Pre-construction</a>
+                        <a href="execution.html">Execution</a>
+                        <a href="post_execution.html">Post-construction</a>
+                    </div>
+                </div>
+                <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                    Contact Us
+                    <div class="dropdown-content">
+                        <a href="#contact">Get In Touch</a>
+                        <a href="#feedback">Feedback</a>
+                    </div>
+                </div>
                 <a href="#careers" class="text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
-                <a href="#feedback" class="text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
-                <a href="#contact" class="text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
-                <a href="#gallery" class="text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden flex items-center">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -73,15 +67,29 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Home</a>
-            <a href="aboutus.html" class="block text-navy-header hover:text-primary-blue transition duration-150">About Us</a>
-            <a href="#achievements" class="block text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
-            <a href="pre-construction.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Pre-construction</a>
-            <a href="execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
-            <a href="#post-construction" class="block text-primary-blue font-semibold">Post-construction</a>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                About Us
+                <div class="dropdown-content">
+                    <a href="#achievements">Achievements</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                Construction
+                <div class="dropdown-content">
+                    <a href="pre-construction.html">Pre-construction</a>
+                    <a href="execution.html">Execution</a>
+                    <a href="post_execution.html">Post-construction</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                Contact Us
+                <div class="dropdown-content">
+                    <a href="#contact">Get In Touch</a>
+                    <a href="#feedback">Feedback</a>
+                </div>
+            </div>
             <a href="#careers" class="block text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
-            <a href="#feedback" class="block text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
-            <a href="#contact" class="block text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
-            <a href="#gallery" class="block text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
         </div>
     </header>
 
@@ -196,7 +204,6 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>

@@ -26,41 +26,39 @@
             }
         }
     </script>
-    <style>
-        /* Custom scroll behavior for smooth navigation */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Style for the benefit icons - kept for general utility, though not used on this specific page yet */
-        .benefit-icon {
-            @apply flex items-center justify-center w-8 h-8 rounded-full text-white mr-3;
-        }
-
-        /* Responsive timeline dots for mobile view */
-        @media (max-width: 640px) {
-            .timeline-dot-mobile {
-                @apply absolute top-0 left-0 transform -translate-x-1/2;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light-bg font-sans text-navy-header">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-8 w-auto"></a>
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-14 w-auto"></a>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-navy-header hover:text-primary-blue transition duration-150">Home</a>
-                <a href="aboutus.html" class="text-navy-header hover:text-primary-blue transition duration-150">About Us</a>
-                <a href="#achievements" class="text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
-                <a href="#pre-construction" class="text-primary-blue font-semibold">Pre-construction</a>
-                <a href="execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
-                <a href="post_execution.html" class="text-navy-header hover:text-primary-blue transition duration-150">Post-construction</a>
+                <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                    About Us
+                    <div class="dropdown-content">
+                        <a href="#achievements">Achievements</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                </div>
+                <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                    Construction
+                    <div class="dropdown-content">
+                        <a href="pre-construction.html">Pre-construction</a>
+                        <a href="execution.html">Execution</a>
+                        <a href="post_execution.html">Post-construction</a>
+                    </div>
+                </div>
+                <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                    Contact Us
+                    <div class="dropdown-content">
+                        <a href="#contact">Get In Touch</a>
+                        <a href="#feedback">Feedback</a>
+                    </div>
+                </div>
                 <a href="#careers" class="text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
-                <a href="#feedback" class="text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
-                <a href="#contact" class="text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
-                <a href="#gallery" class="text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden flex items-center">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -69,15 +67,29 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Home</a>
-            <a href="aboutus.html" class="block text-navy-header hover:text-primary-blue transition duration-150">About Us</a>
-            <a href="#achievements" class="block text-navy-header hover:text-primary-blue transition duration-150">Achievements</a>
-            <a href="#pre-construction" class="block text-primary-blue font-semibold">Pre-construction</a>
-            <a href="execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Execution</a>
-            <a href="post_execution.html" class="block text-navy-header hover:text-primary-blue transition duration-150">Post-construction</a>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                About Us
+                <div class="dropdown-content">
+                    <a href="#achievements">Achievements</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                Construction
+                <div class="dropdown-content">
+                    <a href="pre-construction.html">Pre-construction</a>
+                    <a href="execution.html">Execution</a>
+                    <a href="post_execution.html">Post-construction</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
+                Contact Us
+                <div class="dropdown-content">
+                    <a href="#contact">Get In Touch</a>
+                    <a href="#feedback">Feedback</a>
+                </div>
+            </div>
             <a href="#careers" class="block text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
-            <a href="#feedback" class="block text-navy-header hover:text-primary-blue transition duration-150">Feedback</a>
-            <a href="#contact" class="block text-navy-header hover:text-primary-blue transition duration-150">Get In Touch</a>
-            <a href="#gallery" class="block text-navy-header hover:text-primary-blue transition duration-150">Gallery</a>
         </div>
     </header>
 
@@ -139,7 +151,7 @@
                 <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300 hidden sm:block"></div>
                 
                 <!-- Vertical Line (Mobile) -->
-                <div class="absolute left-4 h-full w-0.5 bg-gray-300 sm:hidden"></div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300 sm:hidden"></div>
 
                 <div class="space-y-12">
                     <!-- Step 1: Program Analysis (Right side on desktop, main on mobile) -->
@@ -150,9 +162,8 @@
                                 <p class="text-sm text-gray-600">Defining project goals, scope, and spatial requirements in detail.</p>
                             </div>
                         </div>
-                        <!-- Center Marker (Desktop) / Left Marker (Mobile) -->
-                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 
-                                    absolute sm:static timeline-dot-mobile">
+                        <!-- Center Marker -->
+                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2">
                             1
                         </div>
                         <!-- Empty space for symmetry on desktop -->
@@ -162,10 +173,9 @@
                     <!-- Step 2: Schematic Design (Left side on desktop, main on mobile) -->
                     <div class="flex items-center relative">
                         <div class="hidden sm:block sm:w-1/2 sm:pr-6 order-1"></div>
-                        <!-- Center Marker (Desktop) / Left Marker (Mobile) -->
-                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0
-                                    absolute sm:static timeline-dot-mobile">
-                            2
+                        <!-- Center Marker -->
+                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2">
+                                     2
                         </div>
                         <div class="w-full sm:w-1/2 pl-6 sm:text-left order-3 sm:order-2">
                              <div class="p-4 rounded-xl bg-primary-blue/10 text-primary-blue shadow-lg border-t-4 border-primary-blue">
@@ -183,9 +193,8 @@
                                 <p class="text-sm text-gray-600">Refining architectural, structural, and MEP details; incorporating value engineering.</p>
                             </div>
                         </div>
-                        <!-- Center Marker (Desktop) / Left Marker (Mobile) -->
-                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0
-                                    absolute sm:static timeline-dot-mobile">
+                        <!-- Center Marker -->
+                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2">
                             3
                         </div>
                         <div class="hidden sm:block sm:w-1/2 sm:pl-6 order-3"></div>
@@ -194,9 +203,8 @@
                     <!-- Step 4: Contract Documents (Left side on desktop, main on mobile) -->
                     <div class="flex items-center relative">
                         <div class="hidden sm:block sm:w-1/2 sm:pr-6 order-1"></div>
-                        <!-- Center Marker (Desktop) / Left Marker (Mobile) -->
-                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0
-                                    absolute sm:static timeline-dot-mobile">
+                        <!-- Center Marker -->
+                        <div class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2">
                             4
                         </div>
                         <div class="w-full sm:w-1/2 pl-6 sm:text-left order-3 sm:order-2">
@@ -268,7 +276,6 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-accent-yellow transition duration-150">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>

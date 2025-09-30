@@ -1,5 +1,9 @@
-# TODO for Adding Counter Effects to Stats in index.html
+# TODO: Add Dropdown Menu to About Us in Navbar
 
-1. [x] Edit index.html: Modify the three stat spans in the #achievements section to set initial text to "0" and add class "counter" and data-target attributes with the respective values (200, 90, 4480).
-2. [x] Edit index.html: Add the JavaScript code for the counter animation using Intersection Observer in the existing script tag at the bottom.
-3. [x] Test the implementation: Use browser_action to launch and verify the counter effects trigger on scroll.
+## Tasks
+- [x] Edit index.html to replace "About Us" link with dropdown menu in desktop navbar
+- [x] Remove separate "Feedback" and "Get In Touch" links from desktop navbar
+- [x] Edit index.html to replace "About Us" link with dropdown menu in mobile menu
+- [x] Remove separate "Feedback" and "Get In Touch" links from mobile menu
+- [x] Fix mobile menu in aboutus.html to have Contact Us dropdown instead of About Us dropdown
+- [x] Verify the dropdown menu works correctly and links are functional
