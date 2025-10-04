@@ -11,7 +11,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Georgia', 'serif'], // Classic serif font for headings and body
                     },
                     colors: {
                         'primary-blue': '#1E3C72', // Deep Blue
@@ -55,8 +55,8 @@
                     <div class="dropdown text-navy-header cursor-pointer">
                         <span class="navbar-link">Contact Us</span>
                         <div class="dropdown-content">
-                            <a href="#contact" class="navbar-link">Get In Touch</a>
-                            <a href="#feedback" class="navbar-link">Feedback</a>
+                            <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                            <a href="feedback.html" class="navbar-link">Feedback</a>
                         </div>
                     </div>
                     <div class="dropdown text-navy-header cursor-pointer">
@@ -92,8 +92,8 @@
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Contact Us</span>
                 <div class="dropdown-content">
-                    <a href="#contact" class="navbar-link">Get In Touch</a>
-                    <a href="#feedback" class="navbar-link">Feedback</a>
+                    <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                    <a href="feedback.html" class="navbar-link">Feedback</a>
                 </div>
             </div>
             <div class="dropdown block text-navy-header cursor-pointer">
@@ -109,26 +109,26 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero_section h-96 border-y-4 border-blue-500 flex items-center justify-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-700 bg-white bg-opacity-75 p-4 rounded-lg">BACKGROUND IMAGE</h1>
+        <section class="hero_section h-96 border-y-4 border-blue-500 flex items-center justify-center fade-in-up">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-700 bg-white bg-opacity-75 p-4 rounded-lg"><img src="narayan.JPG" class="h-80 w-80 object-cover rounded-lg shadow-lg"></h1>
         </section>
 
         <!-- Intro Section -->
-        <section class="py-16 px-4">
-            <div class="container mx-auto text-center max-w-4xl">
-                <h2 class="text-2xl font-bold mb-4">Infinity Group – You Dream, We Build</h2>
-                <p class="text-gray-600 mb-6">Infinity Group is not just a name, but a vision that aims to bridge the gap between engineering education and real-world application. We provide a unique and comprehensive platform where students are encouraged to develop not only their technical knowledge but also the right attitude, problem-solving ability, and practical skills that are essential to succeed in today's competitive world.</p>
-                <h3 class="text-xl font-semibold mb-2">Our philosophy is simple yet powerful:</h3>
-                <p class="text-gray-600 mb-6 flex items-center justify-center">
-                    <span class="text-blue-500 mr-2 text-2xl">◆◆</span> Learning should not be limited to classrooms; it should be applied to create solutions, opportunities, and impact.
+        <section class="py-16 px-4 bg-light-bg">
+            <div class="container mx-auto max-w-4xl bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center text-primary-blue">Infinity Group – You Dream, We Build</h2>
+                <p class="text-gray-700 mb-6 text-justify leading-relaxed">Infinity Group is not just a name, but a vision that aims to bridge the gap between engineering education and real-world application. We provide a unique and comprehensive platform where students are encouraged to develop not only their technical knowledge but also the right attitude, problem-solving ability, and practical skills that are essential to succeed in today's competitive world.</p>
+                <h3 class="text-xl font-semibold mb-4 text-center text-navy-header">Our philosophy is simple yet powerful:</h3>
+                <p class="text-gray-700 mb-6 flex items-center justify-center text-justify leading-relaxed">
+                    <span class="text-accent-yellow mr-2 text-2xl">◆◆</span> Learning should not be limited to classrooms; it should be applied to create solutions, opportunities, and impact.
                 </p>
-                <p class="text-gray-600">Infinity Group believes that every student has the potential to become an innovator, leader, and change-maker when given the right guidance and exposure.</p>
+                <p class="text-gray-700 text-justify leading-relaxed">Infinity Group believes that every student has the potential to become an innovator, leader, and change-maker when given the right guidance and exposure.</p>
             </div>
         </section>
 
 
         <!-- Legacy and Vision Section -->
-        <section class="py-20 bg-gray-50 curved_bg">
+        <section class="py-20 bg-gradient-to-br from-light-bg via-white to-gray-100 curved_bg">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center justify-around gap-12">
                     <div class="md:w-1/2 text-gray-700">
@@ -143,19 +143,19 @@
                             <li>Inspire students to think beyond employment and explore entrepreneurship.</li>
                         </ul>
                     </div>
-                    <div class="flex-shrink-0 flex items-center justify-center">
-                        <div class="circle_element text-gray-700">
-                            <h3 class="text-2xl font-bold mb-4 text-center">Why Infinity Group?</h3>
-                            <ul class="space-y-3">
-                                <li>For engineering students, we're more than a firm or an institution. We're a platform for transformation. Here, you will:</li>
-                                <li>Gain practical, hands-on field experience.</li>
-                                <li>Develop practical skills alongside academic learning.</li>
-                                <li>Work on real projects and solve real-world problems.</li>
-                                <li>Get opportunities to connect with industry experts, leaders, and mentors.</li>
-                                <li>Build the confidence to turn your ideas into impactful solutions.</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="flex-shrink-0 flex items-center justify-center">
+                <div class="w-115 h-96 rounded-full bg-white shadow-2xl border-4 border-primary-blue p-8 flex flex-col items-center justify-center text-gray-900">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Why Infinity Group?</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li>For engineering students, we're more than a firm or an institution. We're a platform for transformation. Here, you will:</li>
+                        <li>Gain practical, hands-on field experience.</li>
+                        <li>Develop practical skills alongside academic learning.</li>
+                        <li>Work on real projects and solve real-world problems.</li>
+                        <li>Get opportunities to connect with industry experts, leaders, and mentors.</li>
+                        <li>Build the confidence to turn your ideas into impactful solutions.</li>
+                    </ul>
+                </div>
+            </div>
                 </div>
             </div>
         </section>
@@ -165,7 +165,7 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/3 text-center">
-                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mr. Santosh S. Patil" class="rounded-lg shadow-lg mx-auto mb-4">
+                        <img src="founder.JPG" alt="Mr. Santosh S. Patil" class="rounded-lg shadow-lg mx-auto mb-4">
                         <h3 class="text-xl font-bold">Santosh S Patil</h3>
                         <p class="text-gray-500">B. E (Civil) M. Tech (Structural engg)<br>Founder INFINITY GROUP</p>
                     </div>
@@ -188,14 +188,6 @@
                 </div>
             </div>
         </section>
-                         </ul>
-                        <h4 class="font-bold mb-2">Contribution & Mission</h4>
-                        <p class="mb-4">His life has been dedicated to a mission with two faces:<br>1. Social Impact - Solving Rural problems, uplifting communities, and creating sustainable ecosystems. <br>2. Student Development - Guiding students to improve their skills, find the right job opportunities, and explore entrepreneurial possibilities.</p>
-                         <p>His ultimate goal is to transform students from job seekers into job providers—nurturing a generation of engineers who innovate, lead, and contribute to society.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Our Promise Section -->
         <section class="py-16 bg-gray-50">
@@ -203,7 +195,7 @@
                 <h2 class="text-3xl font-bold mb-4">Our Promise</h2>
                 <p class="text-gray-600 mb-6">At Infinity Group, we can't build futures—we challenge you to design your futures. We don't just deliver projects—we deliver opportunities. We don't just train engineers—we nurture the next generation of innovators and change-makers.</p>
                 <p class="text-gray-700 font-semibold flex items-center justify-center">
-                   <span class="text-blue-500 mr-2 text-2xl">◆</span> Infinity Group is where engineering meets innovation, where learning meets application, and where dreams turn into reality.
+                   <span class="text-blue-500 mr-2 text-3xl"></span>Infinity Group is where engineering meets innovation, where learning meets application, and where dreams turn into reality.
                 </p>
             </div>
         </section>
@@ -216,7 +208,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
                 <!-- Company Info / Logo -->
                 <div class="col-span-2 lg:col-span-1">
-                    <a href="index.html" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <a href="#home" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
                     <p class="text-sm text-gray-400">
                         You Dream, We build. Your trusted partner in construction and infrastructure development.
                     </p>
@@ -254,8 +246,8 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#feedback" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
-                        <li><a href="#contact" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
+                        <li><a href="feedback.html" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
+                        <li><a href="getintouch.html" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
                     </ul>
                 </div>
             </div>
@@ -364,5 +356,4 @@
 
 </body>
 </html>
-                            const increment = target / (duration / 16); // 60fps
 

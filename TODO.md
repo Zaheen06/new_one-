@@ -1,3 +1,0 @@
-- [x] Move the title div outside the grid in hero section
-- [x] Adjust the grid to have slideshow and why choose in two columns
-- [x] Center the title above the grid

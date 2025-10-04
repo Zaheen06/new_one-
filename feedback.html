@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - INFINITY GROUP</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1E3C72', // Deep Blue
+                        'secondary-blue': '#2A5298', // Medium Blue
+                        'accent-yellow': '#FFC107', // Warm Yellow for buttons/highlights
+                        'light-bg': '#F8F9FA', // Light Grey background
+                        'navy-header': '#212529', // Dark Grey for text
+                        'dark-bg': '#1e3a8a', // Keep for footer if needed, or update later
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="bg-light-bg font-sans text-navy-header">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Careers</span>
+                        <div class="dropdown-content">
+                            <a href="#professional-course" class="navbar-link">Professional Course</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Construction</span>
+                        <div class="dropdown-content">
+                            <a href="construction.html" class="navbar-link">Construction</a>
+                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                            <a href="execution.html" class="navbar-link">Execution</a>
+                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Contact Us</span>
+                        <div class="dropdown-content">
+                            <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                            <a href="feedback.html" class="navbar-link">Feedback</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <a href="aboutus.html" class="navbar-link">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#achievements" class="navbar-link">Achievements</a>
+                            <a href="gallery.html" class="navbar-link">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <span class="navbar-link">Careers</span>
+                    <div class="dropdown-content">
+                        <a href="#professional-course" class="navbar-link">Professional Course</a>
+                    </div>
+                </div>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <span class="navbar-link">Construction</span>
+                    <div class="dropdown-content">
+                        <a href="construction.html" class="navbar-link">Construction</a>
+                        <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                        <a href="execution.html" class="navbar-link">Execution</a>
+                        <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                    </div>
+                </div>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <span class="navbar-link">Contact Us</span>
+                    <div class="dropdown-content">
+                        <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                        <a href="feedback.html" class="navbar-link">Feedback</a>
+                    </div>
+                </div>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <a href="aboutus.html" class="navbar-link">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#achievements" class="navbar-link">Achievements</a>
+                        <a href="gallery.html" class="navbar-link">Gallery</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main class="py-12 md:py-16">
+        <!-- Feedback Section -->
+        <section id="feedback" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">Feedback</h1>
+                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">We Value Your Opinion</p>
+                <p class="mt-4 text-gray-600 max-w-md mx-auto">Your feedback helps us improve our services. Please share your thoughts, suggestions, or experiences with INFINITY GROUP.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <!-- Feedback Form -->
+                <div class="p-6 md:p-8 rounded-xl bg-white shadow-xl border border-gray-100">
+                    <h2 class="text-2xl font-bold text-navy-header mb-6">Share Your Feedback</h2>
+                    <form action="#" method="post" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                <input type="text" id="first-name" name="first-name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" required>
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <select id="subject" name="subject" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Feedback</option>
+                                <option value="service">Service Quality</option>
+                                <option value="website">Website Experience</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                         <div>
+                             <label class="block text-sm font-medium text-gray-700">Overall Rating</label>
+                             <div class="flex space-x-1 mt-1 rating">
+                                 <input type="radio" name="rating" id="star5" value="5" class="hidden" />
+                                 <label for="star5" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                                 <input type="radio" name="rating" id="star4" value="4" class="hidden" />
+                                 <label for="star4" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                                 <input type="radio" name="rating" id="star3" value="3" class="hidden" />
+                                 <label for="star3" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                                 <input type="radio" name="rating" id="star2" value="2" class="hidden" />
+                                 <label for="star2" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                                 <input type="radio" name="rating" id="star1" value="1" class="hidden" />
+                                 <label for="star1" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                             </div>
+                         </div>
+                        <div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Your Feedback</label>
+                            <textarea id="message" name="message" rows="6" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" placeholder="Please provide detailed feedback..." required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-primary-blue text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-secondary-blue transition duration-300">
+                                Submit Feedback
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-blue text-gray-300 py-12 md:py-16 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <!-- Company Info / Logo -->
+                <div class="col-span-2 lg:col-span-1">
+                    <a href="#home" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <p class="text-sm text-gray-400">
+                        You Dream, We build. Your trusted partner in construction and infrastructure development.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="aboutus.html" class="hover:text-accent-yellow transition duration-150">About Us</a></li>
+                        <li><a href="#achievements" class="hover:text-accent-yellow transition duration-150">Achievements</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent-yellow transition duration-150">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
+                        <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
+                        <li><a href="post_execution.html" class="hover:text-accent-yellow transition duration-150">Post-construction</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#careers" class="hover:text-accent-yellow transition duration-150">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="getintouch.html" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
+                        <li><a href="feedback.html" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; <span id="current-year"></span> INFINITY GROUP. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.017 0C8.396 0 7.917.017 6.69.08c-1.23.063-2.067.265-2.8.567a5.87 5.87 0 00-2.12 1.386A5.87 5.87 0 00.567 4.27c-.302.733-.504 1.57-.567 2.8C.017 7.917 0 8.396 0 12.017s.017 4.1.08 5.327c.063 1.23.265 2.067.567 2.8a5.87 5.87 0 001.386 2.12 5.87 5.87 0 002.12 1.386c.733.302 1.57.504 2.8.567 1.227.063 1.706.08 5.327.08s4.1-.017 5.327-.08c1.23-.063 2.067-.265 2.8-.567a5.87 5.87 0 002.12-1.386 5.87 5.87 0 001.386-2.12c.302-.733.504-1.57.567-2.8.063-1.227.08-1.706.08-5.327s-.017-4.1-.08-5.327c-.063-1.23-.265-2.067-.567-2.8a5.87 5.87 0 00-1.386-2.12A5.87 5.87 0 0019.747.567c-.733-.302-1.57-.504-2.8-.567C16.12.017 15.641 0 12.017 0zm0 2.25c3.504 0 3.927.017 5.31.08.978.046 1.51.208 1.857.346.464.182.8.4 1.15.75.35.35.568.686.75 1.15.138.347.3.879.346 1.857.063 1.383.08 1.806.08 5.31s-.017 3.927-.08 5.31c-.046.978-.208 1.51-.346 1.857-.182.464-.4.8-.75 1.15-.35.35-.686.568-1.15.75-.347.138-.879.3-1.857.346-1.383.063-1.806.08-5.31.08s-3.927-.017-5.31-.08c-.978-.046-1.51-.208-1.857-.346-.464-.182-.8-.4-1.15-.75-.35-.35-.568-.686-.75-1.15-.138-.347-.3-.879-.346-1.857C2.097 8.943 2.08 8.52 2.08 5.017s.017-3.927.08-5.31c.046-.978.208-1.51.346-1.857.182-.464.4-.8.75-1.15.35-.35.686-.568 1.15-.75.347-.138.879-.3 1.857-.346C8.09 2.267 8.513 2.25 12.017 2.25zM12.017 6.25a5.767 5.767 0 100 11.534 5.767 5.767 0 000-11.534zm0 9.534a3.767 3.767 0 110-7.534 3.767 3.767 0 010 7.534zm5.767-9.534a1.35 1.35 0 11-2.7 0 1.35 1.35 0 012.7 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu, Dynamic Year, and Star Rating -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle Logic
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Dropdown Toggle Logic for both desktop and mobile
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('span.navbar-link');
+                const content = dropdown.querySelector('.dropdown-content');
+                if (toggle && content) {
+                    toggle.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        content.classList.toggle('show');
+                    });
+                }
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown-content').forEach(content => {
+                        content.classList.remove('show');
+                    });
+                }
+            });
+
+            // Star Rating Logic
+            const starInputs = document.querySelectorAll('input[name="rating"]');
+            const starLabels = document.querySelectorAll('input[name="rating"] + label');
+            function updateStars(selectedIndex) {
+                starLabels.forEach((label, idx) => {
+                    const svg = label.querySelector('svg');
+                    if (idx <= selectedIndex) {
+                        svg.classList.add('text-yellow-400');
+                        svg.classList.remove('text-gray-300');
+                    } else {
+                        svg.classList.remove('text-yellow-400');
+                        svg.classList.add('text-gray-300');
+                    }
+                });
+            }
+            starLabels.forEach((label, index) => {
+                label.addEventListener('click', () => {
+                    console.log('Star clicked:', index);
+                    starInputs[index].checked = true;
+                    updateStars(index);
+                });
+            });
+            function updateStars(selectedIndex) {
+                starLabels.forEach((label, idx) => {
+                    if (idx <= selectedIndex) {
+                        label.classList.add('text-yellow-400');
+                        label.classList.remove('text-gray-300');
+                    } else {
+                        label.classList.remove('text-yellow-400');
+                        label.classList.add('text-gray-300');
+                    }
+                });
+            }
+            // Initialize stars based on checked input
+            const checkedIndex = Array.from(starInputs).findIndex(input => input.checked);
+            if (checkedIndex >= 0) {
+                updateStars(checkedIndex);
+            }
+
+            // Set current year in footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

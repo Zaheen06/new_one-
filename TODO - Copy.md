@@ -1,7 +1,0 @@
-- [x] Update header, footer, and scripts in aboutus.html
-- [ ] Update header, footer, and scripts in execution.html
-- [ ] Update header, footer, and scripts in gallery.html
-- [ ] Update header, footer, and scripts in post_execution.html
-- [ ] Update header, footer, and scripts in construction.html
-- [ ] Update header, footer, and scripts in pre-construction.html
-- [ ] Test navigation across pages
