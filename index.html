@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFINITY GROUP - Building Dreams, Creating Realities</title>
+    <title>INFINITY GROUP - You Dream, We Build</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind to use Inter font and custom colors -->
@@ -34,32 +34,38 @@
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-14 w-auto"></a>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#home" class="text-primary-blue font-semibold">Home</a>
-                    <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
-                      <a href="aboutus.html">About Us</a>
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Careers</span>
                         <div class="dropdown-content">
-                            <a href="#achievements">Achievements</a>
-                            <a href="#gallery">Gallery</a>
+                            <a href="#professional-course" class="navbar-link">Professional Course</a>
                         </div>
                     </div>
-                    <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
-                        Construction
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Construction</span>
                         <div class="dropdown-content">
-                            <a href="pre-construction.html">Pre-construction</a>
-                            <a href="execution.html">Execution</a>
-                            <a href="post_execution.html">Post-construction</a>
+                            <a href="construction.html" class="navbar-link">Construction</a>
+                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                            <a href="execution.html" class="navbar-link">Execution</a>
+                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
                         </div>
                     </div>
-                    <div class="dropdown text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
-                        Contact Us
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Contact Us</span>
                         <div class="dropdown-content">
-                            <a href="#contact">Get In Touch</a>
-                            <a href="#feedback">Feedback</a>
+                            <a href="#contact" class="navbar-link">Get In Touch</a>
+                            <a href="#feedback" class="navbar-link">Feedback</a>
                         </div>
                     </div>
-                    <a href="#careers" class="text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <a href="aboutus.html" class="navbar-link">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#achievements" class="navbar-link">Achievements</a>
+                            <a href="#gallery" class="navbar-link">Gallery</a>
+                        </div>
+                    </div>
                 </div>
             <button id="mobile-menu-button" class="md:hidden flex items-center">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -67,50 +73,74 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
-            <a href="#home" class="block text-primary-blue font-semibold">Home</a>
-            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
-                About Us
+            <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Careers</span>
                 <div class="dropdown-content">
-                    <a href="#achievements">Achievements</a>
-                    <a href="#gallery">Gallery</a>
+                    <a href="#professional-course" class="navbar-link">Professional Course</a>
                 </div>
             </div>
-            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
-                Construction
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Construction</span>
                 <div class="dropdown-content">
-                    <a href="pre-construction.html">Pre-construction</a>
-                    <a href="execution.html">Execution</a>
-                    <a href="post_execution.html">Post-construction</a>
+                    <a href="construction.html" class="navbar-link">Construction</a>
+                    <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                    <a href="execution.html" class="navbar-link">Execution</a>
+                    <a href="post_execution.html" class="navbar-link">Post-construction</a>
                 </div>
             </div>
-            <div class="dropdown block text-navy-header hover:text-primary-blue transition duration-150 cursor-pointer">
-                Contact Us
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Contact Us</span>
                 <div class="dropdown-content">
-                    <a href="#contact">Get In Touch</a>
-                    <a href="#feedback">Feedback</a>
+                    <a href="#contact" class="navbar-link">Get In Touch</a>
+                    <a href="#feedback" class="navbar-link">Feedback</a>
                 </div>
             </div>
-            <a href="#careers" class="block text-navy-header hover:text-primary-blue transition duration-150">Careers</a>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">About Us</span>
+                <div class="dropdown-content">
+                    <a href="aboutus.html" class="navbar-link">About Us</a>
+                    <a href="#achievements" class="navbar-link">Achievements</a>
+                    <a href="#gallery" class="navbar-link">Gallery</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="py-12 md:py-16">
         <!-- Hero Section -->
         <section id="home" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <!-- Title -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">INFINITY GROUP</h1>
+                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">You Dream, We Build</p>
+                <p class="mt-4 text-gray-600 max-w-md mx-auto">Your trusted partner in all construction endeavors. We turn visions into tangible, enduring structures.</p>
+            </div>
             <div class="grid lg:grid-cols-2 gap-12 items-start">
-                <!-- Left: Title and Image -->
-                <div class="space-y-6 lg:space-y-8">
-                    <div class="max-w-xl">
-                        <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">INFINITY GROUP</h1>
-                        <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">Building Dreams, Creating Realities</p>
-                        <p class="mt-4 text-gray-600 max-w-md">Your trusted partner in all construction endeavors. We turn visions into tangible, enduring structures.</p>
-                    </div>
-                    <!-- Placeholder Image (mimicking the one in the screenshot) -->
-                    <div class="aspect-video overflow-hidden rounded-xl shadow-2xl hero-image">
-                        <img src="https://placehold.co/1200x800/1E3C72/ffffff?text=Construction+Site"
-                             alt="Large image of a modern construction project"
-                             class="h-full object-cover mx-auto max-w-full">
-                    </div>
+                <!-- Left: Slideshow -->
+                <div class="aspect-video overflow-hidden rounded-xl shadow-2xl hero-image">
+                    <img src="training.jpg"
+                         alt="Large image of a modern construction project"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                    <img src="narayan.JPG"
+                         alt="Another view of construction project"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                    <img src="IMG_6973.JPG"
+                         alt="Third image of construction site"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                    <img src="Final day view .jpg"
+                         alt="Fourth image of construction site"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                    <img src="grp.JPG"
+                         alt="Fifth image of construction site"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                    <img src="IMG_20190620_153442.jpg"
+                         alt="Sixth image of construction site"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                    <img src="IMG_0002.JPG"
+                         alt="Seventh image of construction site"
+                         class="slide h-full object-cover mx-auto max-w-full">
+                   
                 </div>
 
                 <!-- Right: Why Choose Us -->
@@ -177,7 +207,7 @@
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Stat 1 -->
                 <div class="flex flex-col items-center justify-center p-8 rounded-xl text-center bg-purple-100/50 shadow-md">
-<span class="counter text-4xl font-extrabold text-purple-700" data-target="200">0+</span>
+<span class="counter text-4xl font-extrabold text-purple-700" data-target="50">0+</span>
                     <p class="text-sm font-medium text-gray-700 mt-2">PROJECTS COMPLETED</p>
                 </div>
                 <!-- Stat 2 -->
@@ -253,7 +283,7 @@
                 <div class="col-span-2 lg:col-span-1">
                     <a href="#home" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
                     <p class="text-sm text-gray-400">
-                        Building dreams, creating realities. Your trusted partner in construction and infrastructure development.
+                        You Dream, We build. Your trusted partner in construction and infrastructure development.
                     </p>
                 </div>
 
@@ -282,15 +312,15 @@
                     <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#careers" class="hover:text-accent-yellow transition duration-150">Careers</a></li>
-                        <li><a href="#feedback" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
-                        <li><a href="#contact" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
                     <ul class="space-y-2 text-sm">
+                        <li><a href="#feedback" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
+                        <li><a href="#contact" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
                     </ul>
                 </div>
             </div>
@@ -302,21 +332,9 @@
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
-                        <span class="sr-only">Facebook</span>
+                        <span class="sr-only">Instagram</span>
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
-                        <span class="sr-only">Twitter</span>
-                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 18.407a11.616 11.616 0 006.29 1.84" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
-                        <span class="sr-only">LinkedIn</span>
-                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M12.017 0C8.396 0 7.917.017 6.69.08c-1.23.063-2.067.265-2.8.567a5.87 5.87 0 00-2.12 1.386A5.87 5.87 0 00.567 4.27c-.302.733-.504 1.57-.567 2.8C.017 7.917 0 8.396 0 12.017s.017 4.1.08 5.327c.063 1.23.265 2.067.567 2.8a5.87 5.87 0 001.386 2.12 5.87 5.87 0 002.12 1.386c.733.302 1.57.504 2.8.567 1.227.063 1.706.08 5.327.08s4.1-.017 5.327-.08c1.23-.063 2.067-.265 2.8-.567a5.87 5.87 0 002.12-1.386 5.87 5.87 0 001.386-2.12c.302-.733.504-1.57.567-2.8.063-1.227.08-1.706.08-5.327s-.017-4.1-.08-5.327c-.063-1.23-.265-2.067-.567-2.8a5.87 5.87 0 00-1.386-2.12A5.87 5.87 0 0019.747.567c-.733-.302-1.57-.504-2.8-.567C16.12.017 15.641 0 12.017 0zm0 2.25c3.504 0 3.927.017 5.31.08.978.046 1.51.208 1.857.346.464.182.8.4 1.15.75.35.35.568.686.75 1.15.138.347.3.879.346 1.857.063 1.383.08 1.806.08 5.31s-.017 3.927-.08 5.31c-.046.978-.208 1.51-.346 1.857-.182.464-.4.8-.75 1.15-.35.35-.686.568-1.15.75-.347.138-.879.3-1.857.346-1.383.063-1.806.08-5.31.08s-3.927-.017-5.31-.08c-.978-.046-1.51-.208-1.857-.346-.464-.182-.8-.4-1.15-.75-.35-.35-.568-.686-.75-1.15-.138-.347-.3-.879-.346-1.857C2.097 8.943 2.08 8.52 2.08 5.017s.017-3.927.08-5.31c.046-.978.208-1.51.346-1.857.182-.464.4-.8.75-1.15.35-.35.686-.568 1.15-.75.347-.138.879-.3 1.857-.346C8.09 2.267 8.513 2.25 12.017 2.25zM12.017 6.25a5.767 5.767 0 100 11.534 5.767 5.767 0 000-11.534zm0 9.534a3.767 3.767 0 110-7.534 3.767 3.767 0 010 7.534zm5.767-9.534a1.35 1.35 0 11-2.7 0 1.35 1.35 0 012.7 0z" clip-rule="evenodd"/>
                         </svg>
                     </a>
                 </div>
@@ -343,6 +361,28 @@
                     });
                 });
             }
+
+            // Dropdown Toggle Logic for both desktop and mobile
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('span.navbar-link');
+                const content = dropdown.querySelector('.dropdown-content');
+                if (toggle && content) {
+                    toggle.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        content.classList.toggle('show');
+                    });
+                }
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown-content').forEach(content => {
+                        content.classList.remove('show');
+                    });
+                }
+            });
 
             // Set current year in footer
             const yearSpan = document.getElementById('current-year');

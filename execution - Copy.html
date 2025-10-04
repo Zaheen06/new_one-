@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFINITY GROUP - Building Dreams, Creating Realities</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1E3C72', // Deep Blue
+                        'secondary-blue': '#2A5298', // Medium Blue
+                        'accent-yellow': '#FFC107', // Warm Yellow for buttons/highlights
+                        'light-bg': '#F8F9FA', // Light Grey background
+                        'navy-header': '#212529', // Dark Grey for text
+                        'dark-bg': '#1e3a8a', // Keep for footer if needed, or update later
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="bg-light-bg font-sans text-navy-header">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Careers</span>
+                        <div class="dropdown-content">
+                            <a href="#professional-course" class="navbar-link">Professional Course</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Construction</span>
+                        <div class="dropdown-content">
+                            <a href="construction.html" class="navbar-link">Construction</a>
+                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                            <a href="execution.html" class="navbar-link">Execution</a>
+                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Contact Us</span>
+                        <div class="dropdown-content">
+                            <a href="#contact" class="navbar-link">Get In Touch</a>
+                            <a href="#feedback" class="navbar-link">Feedback</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <a href="aboutus.html" class="navbar-link">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#achievements" class="navbar-link">Achievements</a>
+                            <a href="#gallery" class="navbar-link">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Careers</span>
+                <div class="dropdown-content">
+                    <a href="#professional-course" class="navbar-link">Professional Course</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Construction</span>
+                <div class="dropdown-content">
+                    <a href="construction.html" class="navbar-link">Construction</a>
+                    <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                    <a href="execution.html" class="navbar-link">Execution</a>
+                    <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Contact Us</span>
+                <div class="dropdown-content">
+                    <a href="#contact" class="navbar-link">Get In Touch</a>
+                    <a href="#feedback" class="navbar-link">Feedback</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">About Us</span>
+                <div class="dropdown-content">
+                    <a href="aboutus.html" class="navbar-link">About Us</a>
+                    <a href="#achievements" class="navbar-link">Achievements</a>
+                    <a href="#gallery" class="navbar-link">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="md:pb-16">
+        <!-- TOP BANNER - EXECUTION PHASE -->
+        <section id="execution" class="bg-primary-blue text-white py-12 text-center shadow-lg">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">EXECUTION PHASE</h1>
+                <p class="text-lg text-blue-200 mt-2">From blueprint to handover, managing every detail for a quality build.</p>
+            </div>
+        </section>
+
+        <!-- CORE OFFERINGS SECTION (WHAT WE DO!) -->
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <!-- Intro Text -->
+            <p class="text-center max-w-4xl mx-auto text-lg text-gray-600 mb-12">
+                The Execution Phase is where meticulous planning turns into physical reality. We focus on rigorous site control, superior craftsmanship, and transparent management to deliver your project on time and within budget, with uncompromising quality.
+            </p>
+            
+            <h2 class="text-3xl font-bold text-center text-navy-header mb-10">WHAT WE DO!</h2>
+            
+            <!-- 2x3 Grid of Offerings (6 items) -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Offering 1: Quality Control & Materials -->
+                <div class="p-6 rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="font-semibold text-xl text-primary-blue mb-2">Quality Control & Materials</h3>
+                    <p class="text-gray-600 text-sm">Implementing strict quality assurance protocols and sourcing superior, certified materials for every component of the structure.</p>
+                </div>
+                <!-- Offering 2: Site Management & Safety -->
+                <div class="p-6 rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="font-semibold text-xl text-primary-blue mb-2">Site Management & Safety</h3>
+                    <p class="text-gray-600 text-sm">Meticulous site organization, adhering to zero-tolerance safety standards, and managing logistics for peak efficiency.</p>
+                </div>
+                <!-- Offering 3: Schedule Management -->
+                <div class="p-6 rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="font-semibold text-xl text-primary-blue mb-2">Schedule Management</h3>
+                    <p class="text-gray-600 text-sm">Utilizing advanced project tracking to ensure milestones are met and timelines are strictly followed, minimizing delays.</p>
+                </div>
+                <!-- Offering 4: Trade Partner Coordination -->
+                <div class="p-6 rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="font-semibold text-xl text-primary-blue mb-2">Trade Partner Coordination</h3>
+                    <p class="text-gray-600 text-sm">Seamless coordination of subcontractors and specialized trades for integrated workflow and minimizing clashes or downtime.</p>
+                </div>
+                <!-- Offering 5: Budget Adherence -->
+                <div class="p-6 rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="font-semibold text-xl text-primary-blue mb-2">Budget Adherence</h3>
+                    <p class="text-gray-600 text-sm">Active cost monitoring and regular financial reporting against the approved budget, ensuring complete financial discipline.</p>
+                </div>
+                <!-- Offering 6: Commissioning & Testing -->
+                <div class="p-6 rounded-xl border border-gray-200 shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="font-semibold text-xl text-primary-blue mb-2">Commissioning & Testing</h3>
+                    <p class="text-gray-600 text-sm">Thorough testing and commissioning of all building systems (MEP, life safety) before final client handover and occupancy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS FLOWCHART SECTION (Vertical Timeline) -->
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 bg-light-bg rounded-lg shadow-inner">
+            <h2 class="text-3xl font-bold text-center text-navy-header mb-10">Our Project Execution Process</h2>
+
+            
+
+            <div class="relative max-w-2xl mx-auto">
+                <!-- Vertical Line (Desktop/Tablet) -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300 hidden sm:block"></div>
+
+                <!-- Vertical Line (Mobile) -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300 sm:hidden"></div>
+
+                <div class="space-y-12">
+                    <!-- Step 1: Team Mobilization (Right side on desktop, main on mobile) -->
+                    <div class="flex items-center relative">
+                        <div class="w-full sm:w-1/2 pr-6 sm:text-right order-1">
+                            <div class="p-4 rounded-xl bg-primary-blue/10 text-primary-blue shadow-lg border-t-4 border-primary-blue">
+                                <h3 class="font-bold text-lg mb-1">1. Team Mobilization</h3>
+                                <p class="text-sm text-gray-600">Site setup, establishment of safety protocols, and deployment of specialized labor and equipment.</p>
+                            </div>
+                        </div>
+                        <!-- Center Marker -->
+                        <button class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2 counter-button">
+                            1
+                        </button>
+                        <!-- Empty space for symmetry on desktop -->
+                        <div class="hidden sm:block sm:w-1/2 sm:pl-6 order-3"></div>
+                    </div>
+
+                    <!-- Step 2: Subcontractor Workflow (Left side on desktop, main on mobile) -->
+                    <div class="flex items-center relative">
+                        <div class="hidden sm:block sm:w-1/2 sm:pr-6 order-1"></div>
+                        <!-- Center Marker -->
+                        <button class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2 counter-button">
+                                     2
+                        </button>
+                        <div class="w-full sm:w-1/2 pl-6 sm:text-left order-3 sm:order-2">
+                             <div class="p-4 rounded-xl bg-primary-blue/10 text-primary-blue shadow-lg border-t-4 border-primary-blue">
+                                <h3 class="font-bold text-lg mb-1">2. Subcontractor Workflow</h3>
+                                <p class="text-sm text-gray-600">Scheduling, performance review, and detailed coordination of all trade partners on site.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: In-Progress QA/QC (Right side on desktop, main on mobile) -->
+                    <div class="flex items-center relative">
+                        <div class="w-full sm:w-1/2 pr-6 sm:text-right order-1">
+                            <div class="p-4 rounded-xl bg-primary-blue/10 text-primary-blue shadow-lg border-t-4 border-primary-blue">
+                                <h3 class="font-bold text-lg mb-1">3. In-Progress QA/QC</h3>
+                                <p class="text-sm text-gray-600">Continuous quality assurance, system testing, and compliance checks at every stage.</p>
+                            </div>
+                        </div>
+                        <!-- Center Marker -->
+                        <button class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2 counter-button">
+                            3
+                        </button>
+                        <div class="hidden sm:block sm:w-1/2 sm:pl-6 order-3"></div>
+                    </div>
+
+                    <!-- Step 4: Client Handover (Left side on desktop, main on mobile) -->
+                    <div class="flex items-center relative">
+                        <div class="hidden sm:block sm:w-1/2 sm:pr-6 order-1"></div>
+                        <!-- Center Marker -->
+                        <button class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold z-10 shrink-0 absolute left-1/2 transform -translate-x-1/2 counter-button">
+                            4
+                        </button>
+                        <div class="w-full sm:w-1/2 pl-6 sm:text-left order-3 sm:order-2">
+                             <div class="p-4 rounded-xl bg-primary-blue/10 text-primary-blue shadow-lg border-t-4 border-primary-blue">
+                                <h3 class="font-bold text-lg mb-1">4. Client Handover</h3>
+                                <p class="text-sm text-gray-600">Final inspection, completion of punch lists, and delivery of all project documentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary CTA Banner (Execution Focus - Multiple Buttons) -->
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 mb-12 mt-12">
+            <div class="bg-secondary-blue text-white p-8 sm:p-12 rounded-xl text-center shadow-2xl">
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Need Project Support Now?</h2>
+                <p class="mt-3 text-blue-200 mb-8">We can step in at any stage of your execution phase.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="mailto:contact@infinitygroup.com" class="inline-block bg-accent-yellow text-primary-blue font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition duration-300 w-full sm:w-auto">
+                        TALK TO US
+                    </a>
+                    <a href="#contact" class="inline-block bg-accent-yellow text-primary-blue font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition duration-300 w-full sm:w-auto">
+                        SCHEDULE A SITE VISIT
+                    </a>
+                    <a href="#contact" class="inline-block bg-accent-yellow text-primary-blue font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition duration-300 w-full sm:w-auto">
+                        GET A QUOTE
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-blue text-gray-300 py-12 md:py-16 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <!-- Company Info / Logo -->
+                <div class="col-span-2 lg:col-span-1">
+                    <a href="index.html" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <p class="text-sm text-gray-400">
+                        You Dream, We build. Your trusted partner in construction and infrastructure development.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="aboutus.html" class="hover:text-accent-yellow transition duration-150">About Us</a></li>
+                        <li><a href="#achievements" class="hover:text-accent-yellow transition duration-150">Achievements</a></li>
+                        <li><a href="#gallery" class="hover:text-accent-yellow transition duration-150">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
+                        <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
+                        <li><a href="post_execution.html" class="hover:text-accent-yellow transition duration-150">Post-construction</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#careers" class="hover:text-accent-yellow transition duration-150">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#feedback" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
+                        <li><a href="#contact" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; <span id="current-year"></span> INFINITY GROUP. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.017 0C8.396 0 7.917.017 6.69.08c-1.23.063-2.067.265-2.8.567a5.87 5.87 0 00-2.12 1.386A5.87 5.87 0 00.567 4.27c-.302.733-.504 1.57-.567 2.8C.017 7.917 0 8.396 0 12.017s.017 4.1.08 5.327c.063 1.23.265 2.067.567 2.8a5.87 5.87 0 001.386 2.12 5.87 5.87 0 002.12 1.386c.733.302 1.57.504 2.8.567 1.227.063 1.706.08 5.327.08s4.1-.017 5.327-.08c1.23-.063 2.067-.265 2.8-.567a5.87 5.87 0 002.12-1.386 5.87 5.87 0 001.386-2.12c.302-.733.504-1.57.567-2.8.063-1.227.08-1.706.08-5.327s-.017-4.1-.08-5.327c-.063-1.23-.265-2.067-.567-2.8a5.87 5.87 0 00-1.386-2.12A5.87 5.87 0 0019.747.567c-.733-.302-1.57-.504-2.8-.567C16.12.017 15.641 0 12.017 0zm0 2.25c3.504 0 3.927.017 5.31.08.978.046 1.51.208 1.857.346.464.182.8.4 1.15.75.35.35.568.686.75 1.15.138.347.3.879.346 1.857.063 1.383.08 1.806.08 5.31s-.017 3.927-.08 5.31c-.046.978-.208 1.51-.346 1.857-.182.464-.4.8-.75 1.15-.35.35-.686.568-1.15.75-.347.138-.879.3-1.857.346-1.383.063-1.806.08-5.31.08s-3.927-.017-5.31-.08c-.978-.046-1.51-.208-1.857-.346-.464-.182-.8-.4-1.15-.75-.35-.35-.568-.686-.75-1.15-.138-.347-.3-.879-.346-1.857C2.097 8.943 2.08 8.52 2.08 5.017s.017-3.927.08-5.31c.046-.978.208-1.51.346-1.857.182-.464.4-.8.75-1.15.35-.35.686-.568 1.15-.75.347-.138.879-.3 1.857-.346C8.09 2.267 8.513 2.25 12.017 2.25zM12.017 6.25a5.767 5.767 0 100 11.534 5.767 5.767 0 000-11.534zm0 9.534a3.767 3.767 0 110-7.534 3.767 3.767 0 010 7.534zm5.767-9.534a1.35 1.35 0 11-2.7 0 1.35 1.35 0 012.7 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger, TextPlugin, ScrollToPlugin);
+
+        // Navbar dropdown animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const content = dropdown.querySelector('.dropdown-content');
+                dropdown.addEventListener('mouseenter', () => {
+                    gsap.to(content, { duration: 0.3, opacity: 1, y: 0, display: 'block' });
+                });
+                dropdown.addEventListener('mouseleave', () => {
+                    gsap.to(content, { duration: 0.3, opacity: 0, y: -10, display: 'none' });
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                // Close menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
+
+        // Set current year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 80 } });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        gsap.utils.toArray('.animate-on-scroll').forEach(element => {
+            gsap.fromTo(element, 
+                { opacity: 0, y: 50 },
+                { 
+                    opacity: 1, 
+                    y: 0, 
+                    duration: 1, 
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse'
+                    }
+                }
+            );
+        });
+
+        // Counter animation
+        function animateCounter(element, target, duration) {
+            let start = 0;
+            const increment = target / (duration / 16); // 60fps
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    start = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(start);
+            }, 16);
+        }
+
+        // Trigger counter animations when in view
+        gsap.utils.toArray('.counter').forEach(counter => {
+            ScrollTrigger.create({
+                trigger: counter,
+                start: 'top 80%',
+                onEnter: () => {
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    animateCounter(counter, target, 2000);
+                },
+                once: true
+            });
+        });
+
+        // Swiper for testimonials or galleries if needed
+        // const swiper = new Swiper('.swiper', {
+        //     // Swiper options
+        // });
+    </script>
+</body>
+</html>
