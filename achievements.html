@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - INFINITY GROUP</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1E3C72', // Deep Blue
+                        'secondary-blue': '#2A5298', // Medium Blue
+                        'accent-yellow': '#FFC107', // Warm Yellow for buttons/highlights
+                        'light-bg': '#F8F9FA', // Light Grey background
+                        'navy-header': '#212529', // Dark Grey for text
+                        'dark-bg': '#1e3a8a', // Keep for footer if needed, or update later
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="bg-light-bg font-sans text-navy-header">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Careers</span>
+                        <div class="dropdown-content">
+                            <a href="#professional-course" class="navbar-link">Professional Course</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Construction</span>
+                        <div class="dropdown-content">
+                            <a href="construction.html" class="navbar-link">Construction</a>
+                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                            <a href="execution.html" class="navbar-link">Execution</a>
+                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <span class="navbar-link">Contact Us</span>
+                        <div class="dropdown-content">
+                            <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                            <a href="feedback.html" class="navbar-link">Feedback</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-navy-header cursor-pointer">
+                        <a href="aboutus.html" class="navbar-link">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="achievements.html" class="navbar-link">Achievements</a>
+                            <a href="gallery.html" class="navbar-link">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <span class="navbar-link">Careers</span>
+                    <div class="dropdown-content">
+                        <a href="#professional-course" class="navbar-link">Professional Course</a>
+                    </div>
+                </div>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <span class="navbar-link">Construction</span>
+                    <div class="dropdown-content">
+                        <a href="construction.html" class="navbar-link">Construction</a>
+                        <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                        <a href="execution.html" class="navbar-link">Execution</a>
+                        <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                    </div>
+                </div>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <span class="navbar-link">Contact Us</span>
+                    <div class="dropdown-content">
+                        <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                        <a href="feedback.html" class="navbar-link">Feedback</a>
+                    </div>
+                </div>
+                <div class="dropdown block text-navy-header cursor-pointer">
+                    <a href="aboutus.html" class="navbar-link">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="achievements.html" class="navbar-link">Achievements</a>
+                        <a href="gallery.html" class="navbar-link">Gallery</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main class="py-12 md:py-16">
+        <!-- Achievements Section -->
+        <section id="achievements-gallery" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">Our Achievements</h1>
+                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">Milestones and Success Stories</p>
+                <p class="mt-4 text-gray-600 max-w-md mx-auto">Explore the key achievements and completed projects that showcase our expertise and commitment to excellence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Achievement 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="founder.JPG" alt="Founder of INFINITY GROUP" class="w-full h-48 object-cover object-top">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-navy-header">Our Founder</h3>
+                        <p class="text-sm text-gray-600">The visionary leader guiding INFINITY GROUP to success.</p>
+                    </div>
+                </div>
+                <!-- Achievement 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="grp.JPG" alt="Team Meeting" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-navy-header">Team Collaboration</h3>
+                        <p class="text-sm text-gray-600">United team efforts driving innovation and excellence.</p>
+                    </div>
+                </div>
+                <!-- Achievement 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="training.jpg" alt="Professional Training Session" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-navy-header">Professional Development</h3>
+                        <p class="text-sm text-gray-600">Continuous training to enhance skills and knowledge.</p>
+                    </div>
+                </div>
+                <!-- Achievement 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="narayan.JPG" alt="Key Personnel" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-navy-header">Leadership Team</h3>
+                        <p class="text-sm text-gray-600">Dedicated leaders shaping the future of construction.</p>
+                    </div>
+                </div>
+                <!-- Achievement 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="IMG_20190620_153442.jpg" alt="Client Meeting" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-navy-header">Client Partnerships</h3>
+                        <p class="text-sm text-gray-600">Building strong relationships with our valued clients.</p>
+                    </div>
+                </div>
+                <!-- Achievement 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="IMG_0002.JPG" alt="Industry Networking" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-navy-header">Industry Networking</h3>
+                        <p class="text-sm text-gray-600">Connecting with industry leaders and partners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-blue text-gray-300 py-12 md:py-16 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <!-- Company Info / Logo -->
+                <div class="col-span-2 lg:col-span-1">
+                    <a href="#home" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <p class="text-sm text-gray-400">
+                        You Dream, We build. Your trusted partner in construction and infrastructure development.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="aboutus.html" class="hover:text-accent-yellow transition duration-150">About Us</a></li>
+                        <li><a href="achievements.html" class="hover:text-accent-yellow transition duration-150">Achievements</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent-yellow transition duration-150">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
+                        <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
+                        <li><a href="post_execution.html" class="hover:text-accent-yellow transition duration-150">Post-construction</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#careers" class="hover:text-accent-yellow transition duration-150">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Info</h4>
+                    <p class="text-sm text-gray-400 mb-2">SANTOSH PATIL B.E.Civit M.Tech(Structural)</p>
+                    <p class="text-sm text-gray-400 mb-2">Regd Office: 54/2a Kalmeshwar galli, Shahunagar, Belagavi-10</p>
+                    <p class="text-sm text-gray-400 mb-2">Branch Office: 4th Avenue Teachers Colony, Kormangala, Bangalore.</p>
+                    <p class="text-sm text-gray-400 mb-2">Contact: 7795615084</p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; <span id="current-year"></span> INFINITY GROUP. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent-yellow transition duration-150">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.017 0C8.396 0 7.917.017 6.69.08c-1.23.063-2.067.265-2.8.567a5.87 5.87 0 00-2.12 1.386A5.87 5.87 0 00.567 4.27c-.302.733-.504 1.57-.567 2.8C.017 7.917 0 8.396 0 12.017s.017 4.1.08 5.327c.063 1.23.265 2.067.567 2.8a5.87 5.87 0 001.386 2.12 5.87 5.87 0 002.12 1.386c.733.302 1.57.504 2.8.567 1.227.063 1.706.08 5.327.08s4.1-.017 5.327-.08c1.23-.063 2.067-.265 2.8-.567a5.87 5.87 0 002.12-1.386 5.87 5.87 0 001.386-2.12c.302-.733.504-1.57.567-2.8.063-1.227.08-1.706.08-5.327s-.017-4.1-.08-5.327c-.063-1.23-.265-2.067-.567-2.8a5.87 5.87 0 00-1.386-2.12A5.87 5.87 0 0019.747.567c-.733-.302-1.57-.504-2.8-.567C16.12.017 15.641 0 12.017 0zm0 2.25c3.504 0 3.927.017 5.31.08.978.046 1.51.208 1.857.346.464.182.8.4 1.15.75.35.35.568.686.75 1.15.138.347.3.879.346 1.857.063 1.383.08 1.806.08 5.31s-.017 3.927-.08 5.31c-.046.978-.208 1.51-.346 1.857-.182.464-.4.8-.75 1.15-.35.35-.686.568-1.15.75-.347.138-.879.3-1.857.346-1.383.063-1.806.08-5.31.08s-3.927-.017-5.31-.08c-.978-.046-1.51-.208-1.857-.346-.464-.182-.8-.4-1.15-.75-.35-.35-.568-.686-.75-1.15-.138-.347-.3-.879-.346-1.857C2.097 8.943 2.08 8.52 2.08 5.017s.017-3.927.08-5.31c.046-.978.208-1.51.346-1.857.182-.464.4-.8.75-1.15.35-.35.686-.568 1.15-.75.347-.138.879-.3 1.857-.346C8.09 2.267 8.513 2.25 12.017 2.25zM12.017 6.25a5.767 5.767 0 100 11.534 5.767 5.767 0 000-11.534zm0 9.534a3.767 3.767 0 110-7.534 3.767 3.767 0 010 7.534zm5.767-9.534a1.35 1.35 0 11-2.7 0 1.35 1.35 0 012.7 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Dynamic Year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle Logic
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Dropdown Toggle Logic for both desktop and mobile
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('span.navbar-link');
+                const content = dropdown.querySelector('.dropdown-content');
+                if (toggle && content) {
+                    toggle.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        console.log('Dropdown toggle clicked:', toggle.textContent.trim());
+                        // Close other dropdowns before toggling this one
+                        document.querySelectorAll('.dropdown-content').forEach(c => {
+                            if (c !== content) {
+                                c.classList.remove('show');
+                            }
+                        });
+                        content.classList.toggle('show');
+                        console.log('Toggled dropdown content:', content);
+                    });
+                }
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown-content').forEach(content => {
+                        content.classList.remove('show');
+                    });
+                }
+            });
+
+            // Set current year in footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

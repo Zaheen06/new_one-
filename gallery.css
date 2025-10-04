@@ -50,7 +50,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23d2691e" width="1200" height="400"/></svg>');
+            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23F8F9FA" width="1200" height="400"/></svg>');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -59,7 +59,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: white;
+            color: #212529;
             padding: 0 20px;
         }
 
