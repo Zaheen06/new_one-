@@ -33,51 +33,56 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
-                <div class="hidden lg:flex items-center space-x-6">
-                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Careers</span>
-                        <div class="dropdown-content">
-                            <a href="#professional-course" class="navbar-link">Professional Course</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Construction</span>
-                        <div class="dropdown-content">
-                            <a href="construction.html" class="navbar-link">Construction</a>
-                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
-                            <a href="execution.html" class="navbar-link">Execution</a>
-                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Contact Us</span>
-                        <div class="dropdown-content">
-                            <a href="getintouch.html" class="navbar-link">Get In Touch</a>
-                            <a href="feedback.html" class="navbar-link">Feedback</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <a href="aboutus.html" class="navbar-link">About Us</a>
-                        <div class="dropdown-content">
-                            <a href="achievements.html" class="navbar-link">Achievements</a>
-                            <a href="gallery.html" class="navbar-link">Gallery</a>
-                        </div>
-                    </div>
-                </div>
-            <button id="mobile-menu-button" class="md:hidden flex items-center">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
+        <nav class="px-4 py-0 flex justify-between items-center">
+    <a href="index.html">
+        <img src="logo.jpg" alt="Infinity Group" class="logo">
+    </a>
+    <div class="hidden lg:flex items-center space-x-6">
+        <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Careers</span>
+            <div class="dropdown-content">
+                <a href="internship.html" class="navbar-link">Internship & Professional Course</a>
+            </div>
+        </div>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Construction</span>
+            <div class="dropdown-content">
+                <a href="construction.html" class="navbar-link">Construction</a>
+                <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                <a href="execution.html" class="navbar-link">Execution</a>
+                <a href="post_execution.html" class="navbar-link">Post-construction</a>
+            </div>
+        </div>
+
+        <a href="rainwaterharvesting.html" class="navbar-link">Rainwater Harvesting</a>
+
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Contact Us</span>
+            <div class="dropdown-content">
+                <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                <a href="feedback.html" class="navbar-link">Feedback</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-right text-navy-header cursor-pointer">
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+            <div class="dropdown-content">
+                <a href="achievements.html" class="navbar-link">Achievements</a>
+                <a href="gallery.html" class="navbar-link">Gallery</a>
+            </div>
+        </div>
+    </div>
+    <button id="mobile-menu-button" class="md:hidden flex items-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+</nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Careers</span>
                 <div class="dropdown-content">
-                    <a href="#professional-course" class="navbar-link">Professional Course</a>
+                    <a href="internship.html" class="navbar-link">Internship & Professional Course</a>
                 </div>
             </div>
             <div class="dropdown block text-navy-header cursor-pointer">
@@ -89,11 +94,14 @@
                     <a href="post_execution.html" class="navbar-link">Post-construction</a>
                 </div>
             </div>
+
+            <a href="rainwaterharvesting.html" class="navbar-link block">Rainwater Harvesting</a>
+
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Contact Us</span>
                 <div class="dropdown-content">
-                    <a href="Civil_Project/getintouch.html" class="navbar-link">Get In Touch</a>
-                    <a href="Civil_Project/feedback.html" class="navbar-link">Feedback</a>
+                    <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                    <a href="feedback.html" class="navbar-link">Feedback</a>
                 </div>
             </div>
             <div class="dropdown block text-navy-header cursor-pointer">
@@ -110,92 +118,48 @@
     <main class="py-12 md:py-16">
         <!-- Hero Section -->
         <section id="home" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-            <!-- Title -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">INFINITY GROUP</h1>
-                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">You Dream, We Build</p>
-                <p class="mt-4 text-gray-600 max-w-md mx-auto">Your trusted partner in all construction endeavors. We turn visions into tangible, enduring structures.</p>
-            </div>
-            <div class="grid lg:grid-cols-2 gap-12 items-stretch">
-                <!-- Left: Slideshow -->
-                <div class="h-full overflow-hidden rounded-xl shadow-2xl hero-image">
-                    <img src="training.jpg"
-                         alt="Large image of a modern construction project"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                    <img src="narayan.JPG"
-                         alt="Another view of construction project"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                    <img src="IMG_6973.JPG"
-                         alt="Third image of construction site"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                    <img src="Final day view .jpg"
-                         alt="Fourth image of construction site"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                    <img src="grp.JPG"
-                         alt="Fifth image of construction site"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                    <img src="IMG_20190620_153442.jpg"
-                         alt="Sixth image of construction site"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                    <img src="IMG_0002.JPG"
-                         alt="Seventh image of construction site"
-                         class="slide h-full object-cover mx-auto max-w-full">
-                   
+            <!-- Hero Image with Title Overlay -->
+            <div class="mb-12 rounded-xl overflow-hidden shadow-lg relative" style="background-image: url('training.jpg'); background-size: cover; background-position: center; height: 400px;">
+                <div class="absolute inset-0 bg-black bg-opacity-40 rounded-xl"></div>
+                <div class="relative z-10 text-center text-white p-8 flex flex-col justify-center h-full">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold">INFINITY GROUP</h1>
+                    <p class="text-xl sm:text-2xl font-light text-blue-200 mt-1">You Dream, We Build</p>
+                    <p class="mt-4 max-w-md mx-auto">Your trusted partner in all construction endeavors. We turn visions into tangible, enduring structures.</p>
                 </div>
-
-                <!-- Right: Why Choose Us -->
-                <div class="p-6 md:p-8 rounded-xl bg-white shadow-xl border border-gray-100">
-                    <h2 class="text-2xl font-bold text-navy-header mb-6">Why Choose <span class="text-primary-blue">INFINITY GROUP</span>?</h2>
-                    <div class="space-y-5">
+            </div>
+            <!-- Right: Why Choose Us -->
+            <div class="p-6 md:p-8 rounded-xl bg-white shadow-xl border border-gray-100">
+                <h2 class="text-2xl font-bold text-navy-header mb-6">Why Choose <span class="text-primary-blue">INFINITY GROUP</span>?</h2>
+                <div class="space-y-5">
                         <!-- Benefit 1: Trust -->
-                        <div class="flex items-start">
-                            <div class="benefit_icon bg-accent-yellow">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002 12c0 2.514.809 4.819 2.182 6.757A13.012 13.012 0 0012 22c2.19 0 4.238-.567 6.096-1.554A13.01 13.01 0 0022 12c0-2.514-.809-4.819-2.182-6.757z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-header">100% Trust</h3>
-                                <p class="text-sm text-gray-500">We maintain transparency in materials, labor, and timelines for a worry-free experience.</p>
-                            </div>
+                        <div class="benefit_icon bg-accent-yellow mb-8">
+                            <img src="TRUST.jpg" alt="Trust Icon">
+                            <div class="overlay-text">100% Trust</div>
+                            <div class="overlay-description">We maintain transparency in materials, labor, and timelines for a worry-free experience.</div>
                         </div>
                         <!-- Benefit 2: Expert Team -->
-                        <div class="flex items-start">
-                            <div class="benefit_icon bg-orange-500">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-3H17v3zM5 20h5v-3H5v3zM11 7H8v10h3V7zM16 7h-3v10h3V7z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-header">Expert Team</h3>
-                                <p class="text-sm text-gray-500">Highly qualified engineers, architects, and personnel with certified expertise.</p>
-                            </div>
+                        <div class="benefit_icon bg-orange-500 mb-8">
+                            <img src="TEAM WORK.jpg" alt="Expert Team Icon">
+                            <div class="overlay-text">Expert Team</div>
+                            <div class="overlay-description">Highly qualified engineers, architects, and personnel with certified expertise.</div>
                         </div>
                         <!-- Benefit 3: Quality Delivery -->
-                        <div class="flex items-start">
-                            <div class="benefit_icon bg-teal-500">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h-2m2 0c1.076-2.5 1.076-5.5 0-8M12 10v6m0-6c-1.076-2.5-1.076-5.5 0-8M12 16h2m-2 0c-1.076 2.5-1.076 5.5 0 8M12 16h-2m2 0c1.076 2.5 1.076 5.5 0 8M12 10h2m-2 0c-1.076-2.5-1.076-5.5 0-8"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-header">Timely Delivery</h3>
-                                <p class="text-sm text-gray-500">We adhere to pre-defined schedules and deliver projects efficiently, without sacrificing quality.</p>
-                            </div>
+                        <div class="benefit_icon bg-teal-500 mb-8">
+                            <img src="ON TIME DELIVERY 1.jpg" alt="Timely Delivery Icon">
+                            <div class="overlay-text">Timely Delivery</div>
+                            <div class="overlay-description">We adhere to pre-defined schedules and deliver projects efficiently, without sacrificing quality.</div>
                         </div>
                         <!-- Benefit 4: Safety -->
-                        <div class="flex items-start">
-                            <div class="benefit_icon bg-green-500">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.333-2 3.333-2 3.333v2.334c0 1.104.896 2 2 2s2-.896 2-2v-2.334c0 0-2-2-2-3.333zM12 5a2 2 0 100 4 2 2 0 000-4z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-header">Safety First</h3>
-                                <p class="text-sm text-gray-500">Zero tolerance adherence to strict safety standards across all our development environments.</p>
-                            </div>
+                        <div class="benefit_icon bg-green-500 mb-8">
+                            <img src="SAFETY.jpg" alt="Safety Icon">
+                            <div class="overlay-text">Safety First</div>
+                            <div class="overlay-description">Zero tolerance adherence to strict safety standards across all our development environments.</div>
                         </div>
                         <!-- Benefit 5: 24/7 Support -->
-                        <div class="flex items-start">
-                            <div class="benefit_icon bg-purple-500">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm6.5 11a.5.5 0 01-.5-.5v-5a.5.5 0 011 0v5a.5.5 0 01-.5.5zM12 16a.5.5 0 01-.5-.5v-5a.5.5 0 011 0v5a.5.5 0 01-.5.5zM15.5 16a.5.5 0 01-.5-.5v-5a.5.5 0 011 0v5a.5.5 0 01-.5.5z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-header">24/7 Support</h3>
-                                <p class="text-sm text-gray-500">Dedicated management and support team available to address all your questions and needs.</p>
-                            </div>
+                        <div class="benefit_icon bg-purple-500 mb-8">
+                            <img src="SERVICE.jpg" alt="24/7 Support Icon">
+                            <div class="overlay-text">24/7 Support</div>
+                            <div class="overlay-description">Dedicated management and support team available to address all your questions and needs.</div>
                         </div>
                     </div>
                 </div>
@@ -304,6 +268,7 @@
                         <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
                         <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
                         <li><a href="post_execution.html" class="hover:text-accent-yellow transition duration-150">Post-construction</a></li>
+                        <li><a href="rainwaterharvesting.html" class="hover:text-accent-yellow transition duration-150">Rainwater Harvesting</a></li>
                     </ul>
                 </div>
 
@@ -345,6 +310,21 @@
     <!-- JavaScript for Mobile Menu and Dynamic Year -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Add ease-in effect to benefit images
+            const benefitImages = document.querySelectorAll('.benefit_icon img');
+            benefitImages.forEach((img, index) => {
+                img.onload = () => {
+                    setTimeout(() => {
+                        img.classList.add('loaded');
+                    }, index * 200); // Stagger the animation
+                };
+                // If image is already loaded
+                if (img.complete) {
+                    setTimeout(() => {
+                        img.classList.add('loaded');
+                    }, index * 200);
+                }
+            });
             // Mobile Menu Toggle Logic
             const menuBtn = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');

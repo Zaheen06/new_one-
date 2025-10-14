@@ -33,51 +33,56 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
-                <div class="hidden lg:flex items-center space-x-6">
-                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Careers</span>
-                        <div class="dropdown-content">
-                            <a href="#professional-course" class="navbar-link">Professional Course</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Construction</span>
-                        <div class="dropdown-content">
-                            <a href="construction.html" class="navbar-link">Construction</a>
-                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
-                            <a href="execution.html" class="navbar-link">Execution</a>
-                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Contact Us</span>
-                        <div class="dropdown-content">
-                            <a href="getintouch.html" class="navbar-link">Get In Touch</a>
-                            <a href="feedback.html" class="navbar-link">Feedback</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <a href="aboutus.html" class="navbar-link">About Us</a>
-                        <div class="dropdown-content">
-                            <a href="achievements.html" class="navbar-link">Achievements</a>
-                            <a href="gallery.html" class="navbar-link">Gallery</a>
-                        </div>
-                    </div>
-                </div>
-            <button id="mobile-menu-button" class="md:hidden flex items-center">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
+        <nav class="px-4 py-0 flex justify-between items-center">
+    <a href="index.html">
+        <img src="logo.jpg" alt="Infinity Group" class="logo">
+    </a>
+    <div class="hidden lg:flex items-center space-x-6">
+        <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Careers</span>
+            <div class="dropdown-content">
+                <a href="#professional-course" class="navbar-link">Internship & Professional Course</a>
+            </div>
+        </div>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Construction</span>
+            <div class="dropdown-content">
+                <a href="construction.html" class="navbar-link">Construction</a>
+                <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                <a href="execution.html" class="navbar-link">Execution</a>
+                <a href="post_execution.html" class="navbar-link">Post-construction</a>
+            </div>
+        </div>
+
+        <a href="rainwaterharvesting.html" class="navbar-link">Rainwater Harvesting</a>
+
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Contact Us</span>
+            <div class="dropdown-content">
+                <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                <a href="feedback.html" class="navbar-link">Feedback</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-right text-navy-header cursor-pointer">
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+            <div class="dropdown-content">
+                <a href="achievements.html" class="navbar-link">Achievements</a>
+                <a href="gallery.html" class="navbar-link">Gallery</a>
+            </div>
+        </div>
+    </div>
+    <button id="mobile-menu-button" class="md:hidden flex items-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+</nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Careers</span>
                 <div class="dropdown-content">
-                    <a href="#professional-course" class="navbar-link">Professional Course</a>
+                    <a href="#professional-course" class="navbar-link">Internship & Professional Course</a>
                 </div>
             </div>
             <div class="dropdown block text-navy-header cursor-pointer">
@@ -89,6 +94,9 @@
                     <a href="post_execution.html" class="navbar-link">Post-construction</a>
                 </div>
             </div>
+
+            <a href="rainwaterharvesting.html" class="navbar-link block">Rainwater Harvesting</a>
+
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Contact Us</span>
                 <div class="dropdown-content">
@@ -120,9 +128,9 @@
                 <p class="text-gray-700 mb-6 text-justify leading-relaxed">Infinity Group is not just a name, but a vision that aims to bridge the gap between engineering education and real-world application. We provide a unique and comprehensive platform where students are encouraged to develop not only their technical knowledge but also the right attitude, problem-solving ability, and practical skills that are essential to succeed in today's competitive world.</p>
                 <h3 class="text-xl font-semibold mb-4 text-center text-navy-header">Our philosophy is simple yet powerful:</h3>
                 <p class="text-gray-700 mb-6 flex items-center justify-center text-justify leading-relaxed">
-                    <span class="text-accent-yellow mr-2 text-2xl">◆◆</span> Learning should not be limited to classrooms; it should be applied to create solutions, opportunities, and impact.
+                    <span class="text-accent-yellow mr-2 text-2xl">◆</span> Learning should not be limited to classrooms; it should be applied to create solutions, opportunities, and impact.
                 </p>
-                <p class="text-gray-700 text-justify leading-relaxed">Infinity Group believes that every student has the potential to become an innovator, leader, and change-maker when given the right guidance and exposure.</p>
+                <p class="text-gray-700 text-justify leading-relaxed"><span class="text-accent-yellow mr-2 text-2xl">◆</span>Infinity Group believes that every student has the potential to become an innovator, leader, and change-maker when given the right guidance and exposure.</p>
             </div>
         </section>
 
@@ -130,10 +138,10 @@
         <!-- Legacy and Vision Section -->
         <section class="py-20 bg-gradient-to-br from-light-bg via-white to-gray-100 curved_bg">
             <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center justify-around gap-12">
-                    <div class="md:w-1/2 text-gray-700">
-                        <h2 class="text-3xl font-bold mb-6">Infinity Group's Legacy & Goals</h2>
-                        <p class="mb-4">"For 10 years, Infinity Group has been a trusted name in the Construction Industry, renowned for delivering projects of exceptional quality, innovation, and sustainability. Our journey began with a simple yet profound idea: to bridge the gap into the realms of education, inspiration, and social entrepreneurship—creating a foundation not just for structures, but for dreams, aspirations, and a better future."</p>
+        <div class="flex flex-col items-center justify-center">
+                    <div class="text-gray-700 max-w-4xl">
+                        <h2 class="text-3xl font-bold mb-6 text-center">Infinity Group's Legacy & Goals</h2>
+                        <p class="mb-4 text-justify">"For 10 years, Infinity Group has been a trusted name in the Construction Industry, renowned for delivering projects of exceptional quality, innovation, and sustainability. Our journey began with a simple yet profound idea: to bridge the gap into the realms of education, inspiration, and social entrepreneurship—creating a foundation not just for structures, but for dreams, aspirations, and a better future."</p>
                         <h3 class="text-xl font-semibold mb-3">Our mission is to:</h3>
                         <ul class="list-disc list-inside space-y-2">
                             <li>Provide hands-on learning experiences to engineering students.</li>
@@ -143,19 +151,6 @@
                             <li>Inspire students to think beyond employment and explore entrepreneurship.</li>
                         </ul>
                     </div>
-            <div class="flex-shrink-0 flex items-center justify-center">
-                <div class="w-115 h-96 rounded-full bg-white shadow-2xl border-4 border-primary-blue p-8 flex flex-col items-center justify-center text-gray-900">
-                    <h3 class="text-2xl font-bold mb-4 text-center">Why Infinity Group?</h3>
-                    <ul class="space-y-3 text-sm">
-                        <li>For engineering students, we're more than a firm or an institution. We're a platform for transformation. Here, you will:</li>
-                        <li>Gain practical, hands-on field experience.</li>
-                        <li>Develop practical skills alongside academic learning.</li>
-                        <li>Work on real projects and solve real-world problems.</li>
-                        <li>Get opportunities to connect with industry experts, leaders, and mentors.</li>
-                        <li>Build the confidence to turn your ideas into impactful solutions.</li>
-                    </ul>
-                </div>
-            </div>
                 </div>
             </div>
         </section>
@@ -231,6 +226,7 @@
                         <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
                         <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
                         <li><a href="post_execution.html" class="hover:text-accent-yellow transition duration-150">Post-construction</a></li>
+                        <li><a href="rainwaterharvesting.html" class="hover:text-accent-yellow transition duration-150">Rainwater Harvesting</a></li>
                     </ul>
                 </div>
 

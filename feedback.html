@@ -28,82 +28,88 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animations.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 </head>
 <body class="bg-light-bg font-sans text-navy-header">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="logo.jpg" alt="Infinity Group" class="h-20 w-auto"></a>
-                <div class="hidden lg:flex items-center space-x-6">
-                    <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Careers</span>
-                        <div class="dropdown-content">
-                            <a href="#professional-course" class="navbar-link">Professional Course</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Construction</span>
-                        <div class="dropdown-content">
-                            <a href="construction.html" class="navbar-link">Construction</a>
-                            <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
-                            <a href="execution.html" class="navbar-link">Execution</a>
-                            <a href="post_execution.html" class="navbar-link">Post-construction</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <span class="navbar-link">Contact Us</span>
-                        <div class="dropdown-content">
-                            <a href="getintouch.html" class="navbar-link">Get In Touch</a>
-                            <a href="feedback.html" class="navbar-link">Feedback</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-navy-header cursor-pointer">
-                        <a href="aboutus.html" class="navbar-link">About Us</a>
-                        <div class="dropdown-content">
-                            <a href="achievements.html" class="navbar-link">Achievements</a>
-                            <a href="gallery.html" class="navbar-link">Gallery</a>
-                        </div>
-                    </div>
-                </div>
-            <button id="mobile-menu-button" class="md:hidden flex items-center">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
+        <nav class="px-4 py-0 flex justify-between items-center">
+    <a href="index.html">
+        <img src="logo.jpg" alt="Infinity Group" class="logo">
+    </a>
+    <div class="hidden lg:flex items-center space-x-6">
+        <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Careers</span>
+            <div class="dropdown-content">
+                <a href="#professional-course" class="navbar-link">Internship & Professional Course</a>
+            </div>
+        </div>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Construction</span>
+            <div class="dropdown-content">
+                <a href="construction.html" class="navbar-link">Construction</a>
+                <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                <a href="execution.html" class="navbar-link">Execution</a>
+                <a href="post_execution.html" class="navbar-link">Post-construction</a>
+            </div>
+        </div>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <span class="navbar-link">Contact Us</span>
+            <div class="dropdown-content">
+                <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                <a href="feedback.html" class="navbar-link">Feedback</a>
+            </div>
+        </div>
+        <div class="dropdown text-navy-header cursor-pointer">
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+            <div class="dropdown-content">
+                <a href="achievements.html" class="navbar-link">Achievements</a>
+                <a href="gallery.html" class="navbar-link">Gallery</a>
+            </div>
+        </div>
+    </div>
+    <button id="mobile-menu-button" class="md:hidden flex items-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+</nav>
         <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
-                <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
-                <div class="dropdown block text-navy-header cursor-pointer">
-                    <span class="navbar-link">Careers</span>
-                    <div class="dropdown-content">
-                        <a href="#professional-course" class="navbar-link">Professional Course</a>
-                    </div>
-                </div>
-                <div class="dropdown block text-navy-header cursor-pointer">
-                    <span class="navbar-link">Construction</span>
-                    <div class="dropdown-content">
-                        <a href="construction.html" class="navbar-link">Construction</a>
-                        <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
-                        <a href="execution.html" class="navbar-link">Execution</a>
-                        <a href="post_execution.html" class="navbar-link">Post-construction</a>
-                    </div>
-                </div>
-                <div class="dropdown block text-navy-header cursor-pointer">
-                    <span class="navbar-link">Contact Us</span>
-                    <div class="dropdown-content">
-                        <a href="getintouch.html" class="navbar-link">Get In Touch</a>
-                        <a href="feedback.html" class="navbar-link">Feedback</a>
-                    </div>
-                </div>
-                <div class="dropdown block text-navy-header cursor-pointer">
-                    <a href="aboutus.html" class="navbar-link">About Us</a>
-                    <div class="dropdown-content">
-                        <a href="achievements.html" class="navbar-link">Achievements</a>
-                        <a href="gallery.html" class="navbar-link">Gallery</a>
-                    </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Careers</span>
+                <div class="dropdown-content">
+                    <a href="#professional-course" class="navbar-link">Internship & Professional Course</a>
                 </div>
             </div>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Construction</span>
+                <div class="dropdown-content">
+                    <a href="construction.html" class="navbar-link">Construction</a>
+                    <a href="pre-construction.html" class="navbar-link">Pre-construction</a>
+                    <a href="execution.html" class="navbar-link">Execution</a>
+                    <a href="post_execution.html" class="navbar-link">Post-construction</a>
+                </div>
+            </div>
+
+            <a href="rainwaterharvesting.html" class="navbar-link block">Rainwater Harvesting</a>
+
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <span class="navbar-link">Contact Us</span>
+                <div class="dropdown-content">
+                    <a href="getintouch.html" class="navbar-link">Get In Touch</a>
+                    <a href="feedback.html" class="navbar-link">Feedback</a>
+                </div>
+            </div>
+            <div class="dropdown block text-navy-header cursor-pointer">
+                <a href="aboutus.html" class="navbar-link">About Us</a>
+                <div class="dropdown-content">
+                    <a href="achievements.html" class="navbar-link">Achievements</a>
+                    <a href="gallery.html" class="navbar-link">Gallery</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="py-12 md:py-16">
@@ -149,20 +155,8 @@
                          <div>
                              <label class="block text-sm font-medium text-gray-700">Overall Rating</label>
                              <div class="flex space-x-1 mt-1 rating">
-                                 <input type="radio" name="rating" id="star5" value="5" class="hidden" />
-                                 <label for="star5" class="cursor-pointer text-gray-300 hover:text-yellow-400">
-                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
-                                     </svg>
-                                 </label>
-                                 <input type="radio" name="rating" id="star4" value="4" class="hidden" />
-                                 <label for="star4" class="cursor-pointer text-gray-300 hover:text-yellow-400">
-                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
-                                     </svg>
-                                 </label>
-                                 <input type="radio" name="rating" id="star3" value="3" class="hidden" />
-                                 <label for="star3" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                 <input type="radio" name="rating" id="star1" value="1" class="hidden" />
+                                 <label for="star1" class="cursor-pointer text-gray-300 hover:text-yellow-400">
                                      <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
                                      </svg>
@@ -173,8 +167,20 @@
                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
                                      </svg>
                                  </label>
-                                 <input type="radio" name="rating" id="star1" value="1" class="hidden" />
-                                 <label for="star1" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                 <input type="radio" name="rating" id="star3" value="3" class="hidden" />
+                                 <label for="star3" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                                 <input type="radio" name="rating" id="star4" value="4" class="hidden" />
+                                 <label for="star4" class="cursor-pointer text-gray-300 hover:text-yellow-400">
+                                     <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
+                                     </svg>
+                                 </label>
+                                 <input type="radio" name="rating" id="star5" value="5" class="hidden" />
+                                 <label for="star5" class="cursor-pointer text-gray-300 hover:text-yellow-400">
                                      <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.462a1 1 0 00-.364 1.118l1.287 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.462a1 1 0 00-1.175 0l-3.39 2.462c-.784.57-1.838-.197-1.539-1.118l1.287-3.974a1 1 0 00-.364-1.118L2.045 9.4c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
                                      </svg>
@@ -192,6 +198,14 @@
                             </button>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <!-- Feedback Reviews Section -->
+            <div id="feedback-reviews" class="mt-16">
+                <h2 class="text-3xl font-bold text-navy-header mb-8 text-center">Customer Reviews</h2>
+                <div id="feedback-cards-container" class="feedback-cards-container">
+                    <!-- Feedback cards will be dynamically added here -->
                 </div>
             </div>
         </section>
@@ -311,34 +325,32 @@
             const starLabels = document.querySelectorAll('input[name="rating"] + label');
             function updateStars(selectedIndex) {
                 starLabels.forEach((label, idx) => {
-                    const svg = label.querySelector('svg');
-                    if (idx <= selectedIndex) {
-                        svg.classList.add('text-yellow-400');
-                        svg.classList.remove('text-gray-300');
-                    } else {
-                        svg.classList.remove('text-yellow-400');
-                        svg.classList.add('text-gray-300');
-                    }
-                });
-            }
-            starLabels.forEach((label, index) => {
-                label.addEventListener('click', () => {
-                    console.log('Star clicked:', index);
-                    starInputs[index].checked = true;
-                    updateStars(index);
-                });
-            });
-            function updateStars(selectedIndex) {
-                starLabels.forEach((label, idx) => {
                     if (idx <= selectedIndex) {
                         label.classList.add('text-yellow-400');
                         label.classList.remove('text-gray-300');
+                        const svg = label.querySelector('svg');
+                        if (svg) {
+                            svg.classList.add('text-yellow-400');
+                            svg.classList.remove('text-gray-300');
+                        }
                     } else {
                         label.classList.remove('text-yellow-400');
                         label.classList.add('text-gray-300');
+                        const svg = label.querySelector('svg');
+                        if (svg) {
+                            svg.classList.remove('text-yellow-400');
+                            svg.classList.add('text-gray-300');
+                        }
                     }
                 });
             }
+            starInputs.forEach((input, index) => {
+                input.addEventListener('change', () => {
+                    if (input.checked) {
+                        updateStars(index);
+                    }
+                });
+            });
             // Initialize stars based on checked input
             const checkedIndex = Array.from(starInputs).findIndex(input => input.checked);
             if (checkedIndex >= 0) {
@@ -350,6 +362,175 @@
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
             }
+
+            // Initialize Supabase client
+            const SUPABASE_URL = "https://wqtxlhtecznlfpfipjnt.supabase.co";
+            const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndxdHhsaHRlY3pubGZwZmlwam50Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk4NDc5ODUsImV4cCI6MjA3NTQyMzk4NX0.Zb52uAvht5WNYjswBW-LegfeJScO1ZsSmOWi91iHsDs";
+            const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+            const feedbackForm = document.querySelector('form');
+            const feedbackContainer = document.getElementById('feedback-cards-container');
+
+            // Load feedback from PHP script
+            async function loadFeedback() {
+                try {
+                    const response = await fetch('fetch_feedback.php?v=' + Date.now());
+                    console.log('Response status:', response.status, response.statusText);
+                    const text = await response.text();
+                    console.log('Response text:', text);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch feedback');
+                    }
+                    const data = JSON.parse(text);
+                    return data.map(item => ({
+                        firstName: item.first_name,
+                        lastName: item.last_name,
+                        email: item.email,
+                        subject: item.subject,
+                        rating: item.rating,
+                        message: item.message,
+                        timestamp: item.created_at
+                    }));
+                } catch (error) {
+                    console.error('Error loading feedback:', error);
+                    alert('Error loading feedback: ' + error.message);
+                    return [];
+                }
+            }
+
+            // Render feedback cards
+            async function renderFeedback() {
+                const feedback = await loadFeedback();
+                feedbackContainer.innerHTML = '';
+                if (feedback.length === 0) {
+                    feedbackContainer.innerHTML = '<p class="text-center text-gray-500">No reviews yet. Be the first to leave feedback!</p>';
+                    return;
+                }
+                feedback.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'feedback-card';
+                    let rating = parseInt(item.rating);
+                    if (isNaN(rating) || rating < 1) rating = 1;
+                    if (rating > 5) rating = 5;
+                    const stars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+                    const date = new Date(item.timestamp).toLocaleDateString();
+                    function maskEmail(email) {
+                        const atIndex = email.indexOf('@');
+                        if (atIndex === -1) return email;
+                        const localPart = email.substring(0, atIndex);
+                        const domain = email.substring(atIndex);
+                        if (localPart.length <= 2) return email;
+                        const maskedLocal = localPart[0] + '*'.repeat(localPart.length - 2) + localPart[localPart.length - 1];
+                        return maskedLocal + domain;
+                    }
+                    const maskedEmail = maskEmail(item.email);
+                    card.innerHTML = `
+                        <div class="feedback-card-header">
+                            <div class="feedback-card-name">${item.firstName} ${item.lastName}</div>
+                            <div class="feedback-card-rating">
+                                ${Array.from(stars).map(star => `<span class="star">${star}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div class="feedback-card-subject">${item.subject}</div>
+                        <div class="feedback-card-message">${item.message}</div>
+                        <div class="feedback-card-footer">
+                            <span>${maskedEmail}</span>
+                            <span>${date}</span>
+                        </div>
+                    `;
+                    feedbackContainer.appendChild(card);
+                });
+            }
+
+            // Handle form submission
+            feedbackForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const formData = new FormData(feedbackForm);
+                const newFeedback = {
+                    first_name: formData.get('first-name'),
+                    last_name: formData.get('last-name'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    rating: parseInt(formData.get('rating')),
+                    message: formData.get('message')
+                };
+
+                try {
+                    const response = await fetch('insert_feedback.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(newFeedback)
+                    });
+
+                    if (!response.ok) {
+                        let errorMessage = 'Unknown error';
+                        try {
+                            const errorData = await response.json();
+                            errorMessage = errorData.error || 'Unknown error';
+                        } catch (jsonError) {
+                            const text = await response.text();
+                            errorMessage = text || 'Unknown error';
+                        }
+                        alert('Error submitting feedback: ' + errorMessage);
+                        return;
+                    }
+
+                    const result = await response.json();
+                    console.log('Feedback submitted successfully:', result);
+
+                    await renderFeedback();
+                    feedbackForm.reset();
+                    // Reset star rating
+                    document.querySelectorAll('input[name="rating"]').forEach(input => input.checked = false);
+                    document.querySelectorAll('input[name="rating"] + label svg').forEach(svg => {
+                        svg.classList.remove('text-yellow-400');
+                        svg.classList.add('text-gray-300');
+                    });
+                    // Scroll to reviews
+                    document.getElementById('feedback-reviews').scrollIntoView({ behavior: 'smooth' });
+
+                    // Show success popup
+                    showSuccessPopup('Feedback submitted successfully!');
+                } catch (error) {
+                    console.error('Error submitting feedback:', error);
+                    alert('Error submitting feedback: ' + error.message);
+                }
+            });
+
+            // Function to show success popup
+            function showSuccessPopup(message) {
+                // Create overlay
+                const overlay = document.createElement('div');
+                overlay.className = 'popup-overlay';
+                document.body.appendChild(overlay);
+
+                // Create popup
+                const popup = document.createElement('div');
+                popup.className = 'success-popup';
+                popup.innerHTML = `<div>${message}</div>`;
+                document.body.appendChild(popup);
+
+                // Show animation
+                setTimeout(() => {
+                    overlay.classList.add('show');
+                    popup.classList.add('show');
+                }, 10);
+
+                // Hide and remove after 3 seconds
+                setTimeout(() => {
+                    overlay.classList.remove('show');
+                    popup.classList.remove('show');
+                    setTimeout(() => {
+                        document.body.removeChild(overlay);
+                        document.body.removeChild(popup);
+                    }, 300);
+                }, 3000);
+            }
+
+            // Initial render
+            renderFeedback();
         });
     </script>
 </body>

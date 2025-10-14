@@ -17,6 +17,52 @@ html {
     margin-right: 0.75rem;
 }
 
+/* Ease-in render effect for benefit images */
+.benefit_icon img {
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+}
+
+.benefit_icon img.loaded {
+    opacity: 1;
+}
+
+/* Style for text overlay on images */
+.benefit_icon {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Fixed height for consistent box */
+}
+
+.benefit_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benefit_icon .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    pointer-events: none;
+}
+
+.benefit_icon .overlay-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    pointer-events: none;
+}
+
 /* Styles specific to aboutus.html */
 body {
     font-family: 'Inter', sans-serif;
@@ -111,4 +157,21 @@ body {
     color: #1E3C72;
 }
 
-/* Counter button styles for flowchart markers */
+/* Right-aligned dropdown for About Us */
+.dropdown-right .dropdown-content {
+    right: 0;
+    left: auto;
+}
+/* LOGO STYLING — fixed alignment inside navbar */
+.logo {
+  height: 130px;               /* Increase size nicely */
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 1.5rem;       /* Space between logo and nav links */
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
