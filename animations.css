@@ -16,6 +16,30 @@
     animation: fadeInUp 1s ease forwards;
 }
 
+/* Slide-Up and Fade-In animation for hero title and subtitle */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up-fade-in {
+    animation: slideUpFadeIn 1s ease forwards;
+}
+
+.slide-up-fade-in-delay {
+    animation: slideUpFadeIn 1s ease 0.5s forwards;
+}
+
+.logo-hero {
+    mix-blend-mode: screen;
+}
+
 /* Hover scale and shadow for service cards */
 .service-card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
