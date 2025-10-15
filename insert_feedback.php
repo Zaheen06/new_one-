@@ -3,8 +3,8 @@
 // This script receives POST data and inserts feedback into Supabase using REST API
 
 // Supabase project details
-$supabase_url = 'https://wqtxlhtecznlfpfipjnt.supabase.co';
-$supabase_service_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndxdHhsaHRlY3pubGZwZmlwam50Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTg0Nzk4NSwiZXhwIjoyMDc1NDIzOTg1fQ.jlQH23kJLq1oLVbKpuInVCXrla6MSjBvF93IsS1Nhgc';
+$supabase_url = 'https://kdcpsqckzfhittwpmobp.supabase.co';
+$supabase_service_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtkY3BzcWNremZoaXR0d3Btb2JwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDQwMzA4MCwiZXhwIjoyMDc1OTc5MDgwfQ.q1_Mz9zHYSE5gD2ovhd0ZApeXwBamKtPxve-hi5IZZo';
 
 // Get POST data
 $raw_input = file_get_contents('php://input');

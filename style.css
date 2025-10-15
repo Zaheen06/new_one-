@@ -21,17 +21,24 @@ html {
 .benefit_icon img {
     transition: opacity 0.5s ease-in;
     opacity: 0;
+    transform: translateY(20px);
 }
 
 .benefit_icon img.loaded {
     opacity: 1;
+    transform: translateY(0);
 }
 
 /* Style for text overlay on images */
 .benefit_icon {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Fixed height for consistent box */
+    display: flex;
+    width: 80%;
+    height: 300px; /* Increased height for better aspect ratio */
+}
+
+.benefit_icon .image-container {
+    width: 50%;
+    height: 100%;
 }
 
 .benefit_icon img {
@@ -40,27 +47,43 @@ html {
     object-fit: cover;
 }
 
+.benefit_icon .text-container {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent; /* No background color */
+}
+
 .benefit_icon .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    color: #212529; /* navy-header */
     font-weight: bold;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-    pointer-events: none;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .benefit_icon .overlay-description {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-    pointer-events: none;
+    color: #6c757d; /* gray-500 */
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+    .benefit_icon {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .benefit_icon .image-container,
+    .benefit_icon .text-container {
+        width: 100%;
+    }
+
+    .benefit_icon .image-container {
+        height: 200px; /* Match the increased height */
+    }
 }
 
 /* Styles specific to aboutus.html */
@@ -174,4 +197,95 @@ body {
 
 .logo:hover {
   transform: scale(1.05);
+}
+
+/* Feedback Cards Styling */
+.feedback-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.feedback-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.feedback-card-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #1e3c72; /* primary-blue */
+}
+
+.feedback-card-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.star {
+  font-size: 1.25rem;
+  color: #ffc107; /* accent-yellow */
+}
+
+.feedback-card-subject {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2a5298; /* secondary-blue */
+  margin-bottom: 0.5rem;
+}
+
+.feedback-card-message {
+  font-size: 0.95rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.feedback-card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666666;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .feedback-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Construction project images - adjust object position to show top */
+section.py-16.bg-white .rounded-lg img {
+  object-position: top center;
+}
+
+/* Hero Logo Styling */
+.hero-logo {
+  height: 200px; /* Increased size */
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem; /* Space below logo */
+  animation: slideUpFadeIn 1s ease forwards;
 }

@@ -9,44 +9,63 @@
             color: #333;
         }
 
-        /* Header */
-       header {
-            background: #fff;
-            padding: 20px 50px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+/* LOGO STYLING — fixed alignment inside navbar */
+.logo {
+  height: 130px;               /* Increase size nicely */
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 1.5rem;       /* Space between logo and nav links */
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        } */
+.logo:hover {
+  transform: scale(1.05);
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #1a5490;
-        }
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    bottom: auto;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
+.dropdown:hover .dropdown-content,
+.dropdown-content.show {
+    display: block;
+}
 
-        .nav-links a:hover {
-            color: #ff6b00;
-        }
+.dropdown-content a {
+    color: #212529;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f9fa;
+    color: #1E3C72;
+}
+
+/* Right-aligned dropdown for About Us */
+.dropdown-right .dropdown-content {
+    right: 0;
+    left: auto;
+}
 
         /* Hero Section */
         .hero {
@@ -130,6 +149,7 @@
             width: 100%;
             height: 300px;
             object-fit: cover;
+            object-position: top center;
         }
 
 

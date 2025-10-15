@@ -33,11 +33,13 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="px-4 py-0 flex justify-between items-center">
-    <a href="index.html">
-        <img src="logo.jpg" alt="Infinity Group" class="logo">
-    </a>
-    <div class="hidden lg:flex items-center space-x-6">
+        <nav class="px-4 py-0 flex items-center">
+    <div class="flex-shrink-0">
+        <a href="index.html">
+            <img src="logo.jpg" alt="Infinity Group" class="logo">
+        </a>
+    </div>
+    <div class="flex-1 hidden lg:flex justify-center items-center space-x-6">
         <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
         <div class="dropdown text-navy-header cursor-pointer">
             <span class="navbar-link">Careers</span>
@@ -72,7 +74,7 @@
             </div>
         </div>
     </div>
-    <button id="mobile-menu-button" class="md:hidden flex items-center">
+    <button id="mobile-menu-button" class="md:hidden flex items-center flex-shrink-0">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
     </button>
 </nav>
@@ -115,51 +117,72 @@
         </div>
     </header>
 
-    <main class="py-12 md:py-16">
+    <main class="pb-12 md:pb-16">
         <!-- Hero Section -->
-        <section id="home" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <section id="home" class="mb-16">
             <!-- Hero Image with Title Overlay -->
-            <div class="mb-12 rounded-xl overflow-hidden shadow-lg relative" style="background-image: url('home.jpg'); background-size: cover; background-position: center; height: 400px;">
+            <div class="mb-12 rounded-xl overflow-hidden shadow-lg relative" style="background-image: url('home.jpg'); background-size: cover; background-position: center; height: 600px;">
                 <div class="absolute inset-0 bg-black bg-opacity-40 rounded-xl"></div>
                 <div class="relative z-10 text-center text-white p-8 flex flex-col justify-center h-full">
+                    <img src="logo1.png" alt="Infinity Group Logo" class="hero-logo mb-4">
                     <h1 class="text-4xl sm:text-5xl font-extrabold slide-up-fade-in">INFINITY GROUP</h1>
                     <p class="text-xl sm:text-2xl font-light text-blue-200 mt-1 slide-up-fade-in-delay">You Dream, We Build</p>
                     <p class="mt-4 max-w-md mx-auto">Your trusted partner in all construction endeavors. We turn visions into tangible, enduring structures.</p>
                 </div>
             </div>
             <!-- Right: Why Choose Us -->
-            <div class="p-6 md:p-8 rounded-xl bg-white shadow-xl border border-gray-100">
-                <h2 class="text-2xl font-bold text-navy-header mb-6">Why Choose <span class="text-primary-blue">INFINITY GROUP</span>?</h2>
+            <div class="p-6 md:p-8 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-100 shadow-2xl border border-gray-200">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-navy-header mb-8">Why Choose <span class="text-primary-blue">INFINITY GROUP</span>?</h2>
                 <div class="space-y-5">
                         <!-- Benefit 1: Trust -->
-                        <div class="benefit_icon bg-accent-yellow mb-8">
-                            <img src="TRUST.jpg" alt="Trust Icon">
-                            <div class="overlay-text">100% Trust</div>
-                            <div class="overlay-description">We maintain transparency in materials, labor, and timelines for a worry-free experience.</div>
+                        <div class="benefit_icon mb-8">
+                            <div class="image-container bg-accent-yellow">
+                                <img src="TRUST.jpg" alt="Trust Icon">
+                            </div>
+                            <div class="text-container">
+                                <div class="overlay-text">100% Trust</div>
+                                <div class="overlay-description">We maintain transparency in materials, labor, and timelines for a worry-free experience.</div>
+                            </div>
                         </div>
                         <!-- Benefit 2: Expert Team -->
-                        <div class="benefit_icon bg-orange-500 mb-8">
-                            <img src="TEAM WORK.jpg" alt="Expert Team Icon">
-                            <div class="overlay-text">Expert Team</div>
-                            <div class="overlay-description">Highly qualified engineers, architects, and personnel with certified expertise.</div>
+                        <div class="benefit_icon mb-8">
+                            <div class="image-container bg-orange-500">
+                                <img src="TEAM WORK.jpg" alt="Expert Team Icon">
+                            </div>
+                            <div class="text-container">
+                                <div class="overlay-text">Expert Team</div>
+                                <div class="overlay-description">Highly qualified engineers, architects, and personnel with certified expertise.</div>
+                            </div>
                         </div>
                         <!-- Benefit 3: Quality Delivery -->
-                        <div class="benefit_icon bg-teal-500 mb-8">
-                            <img src="ON TIME DELIVERY 1.jpg" alt="Timely Delivery Icon">
-                            <div class="overlay-text">Timely Delivery</div>
-                            <div class="overlay-description">We adhere to pre-defined schedules and deliver projects efficiently, without sacrificing quality.</div>
+                        <div class="benefit_icon mb-8">
+                            <div class="image-container bg-teal-500">
+                                <img src="ON TIME DELIVERY 1.jpg" alt="Timely Delivery Icon">
+                            </div>
+                            <div class="text-container">
+                                <div class="overlay-text">Timely Delivery</div>
+                                <div class="overlay-description">We adhere to pre-defined schedules and deliver projects efficiently, without sacrificing quality.</div>
+                            </div>
                         </div>
                         <!-- Benefit 4: Safety -->
-                        <div class="benefit_icon bg-green-500 mb-8">
-                            <img src="SAFETY.jpg" alt="Safety Icon">
-                            <div class="overlay-text">Safety First</div>
-                            <div class="overlay-description">Zero tolerance adherence to strict safety standards across all our development environments.</div>
+                        <div class="benefit_icon mb-8">
+                            <div class="image-container bg-green-500">
+                                <img src="SAFETY.jpg" alt="Safety Icon">
+                            </div>
+                            <div class="text-container">
+                                <div class="overlay-text">Safety First</div>
+                                <div class="overlay-description">Zero tolerance adherence to strict safety standards across all our development environments.</div>
+                            </div>
                         </div>
                         <!-- Benefit 5: 24/7 Support -->
-                        <div class="benefit_icon bg-purple-500 mb-8">
-                            <img src="SERVICE.jpg" alt="24/7 Support Icon">
-                            <div class="overlay-text">24/7 Support</div>
-                            <div class="overlay-description">Dedicated management and support team available to address all your questions and needs.</div>
+                        <div class="benefit_icon mb-8">
+                            <div class="image-container bg-purple-500">
+                                <img src="SERVICE.jpg" alt="24/7 Support Icon">
+                            </div>
+                            <div class="text-container">
+                                <div class="overlay-text">24/7 Support</div>
+                                <div class="overlay-description">Dedicated management and support team available to address all your questions and needs.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,20 +333,21 @@
     <!-- JavaScript for Mobile Menu and Dynamic Year -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Add ease-in effect to benefit images
+            // Add fade-in-slide-up effect to benefit images on scroll
             const benefitImages = document.querySelectorAll('.benefit_icon img');
-            benefitImages.forEach((img, index) => {
-                img.onload = () => {
-                    setTimeout(() => {
-                        img.classList.add('loaded');
-                    }, index * 200); // Stagger the animation
-                };
-                // If image is already loaded
-                if (img.complete) {
-                    setTimeout(() => {
-                        img.classList.add('loaded');
-                    }, index * 200);
-                }
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('fade-in-slide-up');
+                        }, index * 200); // Stagger the animation
+                        imageObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            benefitImages.forEach(img => {
+                imageObserver.observe(img);
             });
             // Mobile Menu Toggle Logic
             const menuBtn = document.getElementById('mobile-menu-button');
