@@ -39,11 +39,19 @@ html {
 /* Criss-cross pattern: alternate image and text sides */
 .benefit_icon:nth-child(odd) {
     flex-direction: row;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .benefit_icon:nth-child(even) {
     flex-direction: row-reverse;
-    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Text alignment: left for all to match the pattern */
+.benefit_icon .text-container {
+    text-align: left;
 }
 
 .benefit_icon .image-container {

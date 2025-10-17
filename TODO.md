@@ -1,0 +1,4 @@
+- [ ] Update style.css: Replace .benefit_icon:nth-child(even) rules with .why-choose-item:nth-child(even), incorporating new gap and flex-direction settings.
+- [ ] Update index.html: Change class from "benefit_icon" to "why-choose-item" for each item in WHY CHOOSE section, and restructure HTML to match provided template (img and div with h3 and p).
+- [ ] Ensure criss-cross pattern (odd: image left, text right; even: image right, text left) via CSS.
+- [ ] Test layout on different screen sizes to confirm spacing is fixed.
