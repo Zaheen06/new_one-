@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Lato', 'sans-serif'],
                     },
                     colors: {
                         'primary-blue': '#1E3C72', // Deep Blue
@@ -42,6 +42,9 @@
     </div>
     <div class="flex-1 hidden lg:flex justify-center items-center space-x-6">
         <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+        <a href="aboutus.html" class="navbar-link">About Us</a>
+        <a href="achievements.html" class="navbar-link">Achievements</a>
+        <a href="gallery.html" class="navbar-link">Gallery</a>
         <div class="dropdown text-navy-header cursor-pointer">
             <span class="navbar-link">Careers</span>
             <div class="dropdown-content">
@@ -56,21 +59,13 @@
                 <a href="execution.html" class="navbar-link">Execution</a>
                 <a href="post_execution.html" class="navbar-link">Post-construction</a>
             </div>
-            
         </div>
-         <a href="rainwaterharvesting.html" class="navbar-link">Rainwater Harvesting</a>
+        <a href="rainwaterharvesting.html" class="navbar-link">Rainwater Harvesting</a>
         <div class="dropdown text-navy-header cursor-pointer">
             <span class="navbar-link">Contact Us</span>
             <div class="dropdown-content">
                 <a href="getintouch.html" class="navbar-link">Get In Touch</a>
                 <a href="feedback.html" class="navbar-link">Feedback</a>
-            </div>
-        </div>
-        <div class="dropdown dropdown-right text-navy-header cursor-pointer">
-            <a href="aboutus.html" class="navbar-link">About Us</a>
-            <div class="dropdown-content">
-                <a href="achievements.html" class="navbar-link">Achievements</a>
-                <a href="gallery.html" class="navbar-link">Gallery</a>
             </div>
         </div>
     </div>
@@ -81,6 +76,9 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+            <a href="aboutus.html" class="navbar-link block">About Us</a>
+            <a href="achievements.html" class="navbar-link block">Achievements</a>
+            <a href="gallery.html" class="navbar-link block">Gallery</a>
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Careers</span>
                 <div class="dropdown-content">
@@ -96,21 +94,12 @@
                     <a href="post_execution.html" class="navbar-link">Post-construction</a>
                 </div>
             </div>
-
             <a href="rainwaterharvesting.html" class="navbar-link block">Rainwater Harvesting</a>
-
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Contact Us</span>
                 <div class="dropdown-content">
                     <a href="getintouch.html" class="navbar-link">Get In Touch</a>
                     <a href="feedback.html" class="navbar-link">Feedback</a>
-                </div>
-            </div>
-            <div class="dropdown block text-navy-header cursor-pointer">
-                <a href="aboutus.html" class="navbar-link">About Us</a>
-                <div class="dropdown-content">
-                    <a href="achievements.html" class="navbar-link">Achievements</a>
-                    <a href="gallery.html" class="navbar-link">Gallery</a>
                 </div>
             </div>
         </div>
@@ -120,15 +109,15 @@
         <!-- Feedback Section -->
         <section id="feedback" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div class="text-center mb-12">
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">Feedback</h1>
-                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">We Value Your Opinion</p>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header" style="font-family: lato sans-serif; text-transform: uppercase;">Feedback</h1>
+                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1" style="font-family: lato sans-serif;">We Value Your Opinion</p>
                 <p class="mt-4 text-gray-600 max-w-md mx-auto">Your feedback helps us improve our services. Please share your thoughts, suggestions, or experiences with INFINITY GROUP.</p>
             </div>
 
             <div class="max-w-2xl mx-auto">
                 <!-- Feedback Form -->
                 <div class="p-6 md:p-8 rounded-xl bg-white shadow-xl border border-gray-100">
-                    <h2 class="text-2xl font-bold text-navy-header mb-6">Share Your Feedback</h2>
+                    <h2 class="text-2xl font-bold text-navy-header mb-6"style="font-family: lato sans-serif; text-transform: uppercase;">Share Your Feedback</h2>
                     <form action="#" method="post" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
@@ -194,7 +183,7 @@
                         <div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700">Your Feedback</label>
-                            <textarea id="message" name="message" rows="6" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" placeholder="Please provide detailed feedback..." required></textarea>
+                            <textarea id="message" name="message" rows="6" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue focus:border-primary-blue" placeholder="Please provide detailed feedback..." style="min-height: 150px; resize: none;" required></textarea>
                         </div>
                         <div>
                             <button type="submit" class="w-full bg-primary-blue text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-secondary-blue transition duration-300">
@@ -207,7 +196,7 @@
 
             <!-- Feedback Reviews Section -->
             <div id="feedback-reviews" class="mt-16">
-                <h2 class="text-3xl font-bold text-navy-header mb-8 text-center">Customer Reviews</h2>
+                <h2 class="text-3xl font-bold text-navy-header mb-8 text-center" style="font-family: lato sans-serif; text-transform: uppercase;">Customer Reviews</h2>
                 <div id="feedback-cards-container" class="feedback-cards-container">
                     <!-- Feedback cards will be dynamically added here -->
                 </div>
@@ -221,7 +210,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
                 <!-- Company Info / Logo -->
                 <div class="col-span-2 lg:col-span-1">
-                    <a href="index.html" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <a href="index.html" class="text-2xl font-extrabold tracking-wide text-white block mb-3 whitespace-nowrap">INFINITY GROUP</a>
                     <p class="text-sm text-gray-400">
                         You Dream, We build. Your trusted partner in construction and infrastructure development.
                     </p>
@@ -229,7 +218,7 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">QUICK LINKS</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="aboutus.html" class="hover:text-accent-yellow transition duration-150">About Us</a></li>
                         <li><a href="achievements.html" class="hover:text-accent-yellow transition duration-150">Achievements</a></li>
@@ -239,7 +228,7 @@
 
                 <!-- Services -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">SERVICES</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
                         <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
@@ -250,18 +239,22 @@
 
                 <!-- Company -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">COMPANY</h4>
                     <ul class="space-y-2 text-sm">
+                          <li><a href="construction.html" class="hover:text-accent-yellow transition duration-150">Construction Company</a></li>
                         <li><a href="internship.html" class="hover:text-accent-yellow transition duration-150">Internship & Professional Training</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">CONTACT US</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="feedback.html" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
                         <li><a href="getintouch.html" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
+                        <li>Landline: 0831-3553030</li>
+                        <li>WhatsApp: 7795615084</li>
+                        <li>Address: Ground Floor, SyNo,54/2A, Kalmeshwar Galli, Shahunagar, Belgaum </li>
                     </ul>
                 </div>
             </div>
@@ -536,6 +529,15 @@
 
             // Initial render
             renderFeedback();
+
+            // Auto-resize textarea
+            const messageTextarea = document.getElementById('message');
+            if (messageTextarea) {
+                messageTextarea.addEventListener('input', function() {
+                    this.style.height = 'auto';
+                    this.style.height = this.scrollHeight + 'px';
+                });
+            }
         });
     </script>
 </body>

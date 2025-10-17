@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,6 +41,9 @@
     </div>
     <div class="flex-1 hidden lg:flex justify-center items-center space-x-6">
         <a href="index.html" class="navbar-link text-primary-blue font-semibold">Home</a>
+        <a href="aboutus.html" class="navbar-link">About Us</a>
+        <a href="achievements.html" class="navbar-link">Achievements</a>
+        <a href="gallery.html" class="navbar-link">Gallery</a>
         <div class="dropdown text-navy-header cursor-pointer">
             <span class="navbar-link">Careers</span>
             <div class="dropdown-content">
@@ -56,21 +59,12 @@
                 <a href="post_execution.html" class="navbar-link">Post-construction</a>
             </div>
         </div>
-
         <a href="rainwaterharvesting.html" class="navbar-link">Rainwater Harvesting</a>
-
         <div class="dropdown text-navy-header cursor-pointer">
             <span class="navbar-link">Contact Us</span>
             <div class="dropdown-content">
                 <a href="getintouch.html" class="navbar-link">Get In Touch</a>
                 <a href="feedback.html" class="navbar-link">Feedback</a>
-            </div>
-        </div>
-        <div class="dropdown dropdown-right text-navy-header cursor-pointer">
-            <a href="aboutus.html" class="navbar-link">About Us</a>
-            <div class="dropdown-content">
-                <a href="achievements.html" class="navbar-link">Achievements</a>
-                <a href="gallery.html" class="navbar-link">Gallery</a>
             </div>
         </div>
     </div>
@@ -81,6 +75,9 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="index.html" class="navbar-link block text-primary-blue font-semibold">Home</a>
+            <a href="aboutus.html" class="navbar-link block">About Us</a>
+            <a href="achievements.html" class="navbar-link block">Achievements</a>
+            <a href="gallery.html" class="navbar-link block">Gallery</a>
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Careers</span>
                 <div class="dropdown-content">
@@ -96,9 +93,7 @@
                     <a href="post_execution.html" class="navbar-link">Post-construction</a>
                 </div>
             </div>
-
             <a href="rainwaterharvesting.html" class="navbar-link block">Rainwater Harvesting</a>
-
             <div class="dropdown block text-navy-header cursor-pointer">
                 <span class="navbar-link">Contact Us</span>
                 <div class="dropdown-content">
@@ -106,116 +101,94 @@
                     <a href="feedback.html" class="navbar-link">Feedback</a>
                 </div>
             </div>
-            <div class="dropdown block text-navy-header cursor-pointer">
-                <span class="navbar-link">About Us</span>
-                <div class="dropdown-content">
-                    <a href="aboutus.html" class="navbar-link">About Us</a>
-                    <a href="achievements.html" class="navbar-link">Achievements</a>
-                    <a href="gallery.html" class="navbar-link">Gallery</a>
-                </div>
-            </div>
         </div>
     </header>
 
     <main class="py-12 md:py-16">
-        <!-- Achievements Section -->
-        <section id="achievements-gallery" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-            <div class="text-center mb-12">
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-navy-header">Our Achievements</h1>
-                <p class="text-xl sm:text-2xl font-light text-primary-blue mt-1">Milestones and Success Stories</p>
-                <p class="mt-4 text-gray-600 max-w-md mx-auto">Explore the key achievements and completed projects that showcase our expertise and commitment to excellence.</p>
+        <section id="achievements-gallery" class="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+          <div class="text-center mb-16">
+            <h1 class="text-5xl font-extrabold text-navy-header uppercase" style="font-family: Lato, sans-serif;">Our Achievements</h1>
+            <p class="text-xl font-light text-primary-blue mt-2">Milestones and Success Stories</p>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Explore the key achievements and completed projects that showcase our expertise and commitment to excellence.
+            </p>
+          </div>
+
+          <div class="space-y-16">
+            <!-- Achievement Card -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+              <div class="md:w-1/2">
+                <img src="6a.jpg" alt="Best Team Award" class="w-full h-[28rem] md:h-[34rem] object-cover">
+              </div>
+              <div class="md:w-1/2 flex flex-col justify-center px-8 py-6 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-navy-header mb-4 uppercase" style="font-family: Lato, sans-serif;">Best Team Award (2015)</h3>
+                <p class="text-gray-700 text-xl mb-3"><strong>Event:</strong> International Yuva Summit by Deshpande Foundation</p>
+                <p class="text-gray-700 text-xl mb-3"><strong>Recognition For:</strong> Model Village Initiative — addressing 50+ social issues through sustainable and community-driven solutions.</p>
+                <p class="text-gray-700 text-xl"><strong>Presented By:</strong> Mr. N. R. Narayana Murthy & Mr. Shekhar Gupta</p>
+              </div>
             </div>
 
-            <div class="space-y-12">
-                <!-- Achievement 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex">
-                        <div class="md:w-1/2">
-                            <img src="1a.jpg" alt="Best Leader Award" class="w-full h-[28rem] md:h-[40rem] object-cover">
-                        </div>
-                        <div class="md:w-1/2 p-6">
-                            <h3 class="text-2xl font-bold text-navy-header mb-4">Best Leader Award (2016)</h3>
-                            <p class="text-gray-700 text-xl mb-2"><strong>Event:</strong> International Yuva Summit by Deshpande Foundation</p>
-                            <p class="text-gray-700 text-xl mb-2"><strong>Recognition For:</strong> Model Village Initiative — successfully addressing over 50 major social issues through sustainable and community-driven solutions.</p>
-                            <p class="text-gray-700 text-xl"><strong>Presented By:</strong> Mr. N. R. Narayana Murthy (Co-founder, Infosys) and Mr. Shekhar Gupta (Senior Journalist, The Times of India).</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Achievement 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex flex-row-reverse">
-                        <div class="md:w-1/2">
-                            <img src="2a.jpg" alt="Best Team Award" class="w-full h-[28rem] md:h-[40rem] object-cover object-top">
-                        </div>
-                        <div class="md:w-1/2 p-6">
-                            <h3 class="text-2xl font-bold text-navy-header mb-4">Best Team Award (2015)</h3>
-                            <p class="text-gray-700 text-xl mb-2"><strong>Presented By:</strong> Mr. Kailash Satyarthi (Nobel Laureate) and Mr. N. R. Narayana Murthy</p>
-                            <p class="text-gray-700 text-xl"><strong>Achievement:</strong> Honored for impactful rural development projects executed in Belgaum, setting benchmarks in collaborative social change.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Achievement 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex">
-                        <div class="md:w-1/2">
-                            <img src="3a.jpg" alt="Startup Recognition" class="w-full h-[28rem] md:h-[40rem] object-cover">
-                        </div>
-                        <div class="md:w-1/2 p-6">
-                            <h3 class="text-2xl font-bold text-navy-header mb-4">Startup Recognition</h3>
-                            <p class="text-gray-700 text-xl mb-2"><strong>Platform:</strong> Startup India – Startup Karnataka Yatra (K-Tech, Bangalore)</p>
-                            <p class="text-gray-700 text-xl"><strong>Highlight:</strong> Recognized for innovative and socially impactful ideas promoting rural entrepreneurship and grassroots innovation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Achievement 4 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex flex-row-reverse">
-                        <div class="md:w-1/2">
-                            <img src="4a.jpg" alt="Special Appreciation" class="w-full h-[28rem] md:h-[40rem] object-cover object-top">
-                        </div>
-                        <div class="md:w-1/2 p-6">
-                            <h3 class="text-2xl font-bold text-navy-header mb-4">Special Appreciation</h3>
-                            <p class="text-gray-700 text-xl mb-2"><strong>By:</strong> Dr. Gururaj Deshpande & Mrs. Jayshree Deshpande</p>
-                            <p class="text-gray-700 text-xl"><strong>Recognition:</strong> For exceptional contribution to community empowerment and youth leadership development through sustainable rural initiatives.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Achievement 5 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex">
-                        <div class="md:w-1/2">
-                            <img src="5a.jpg" alt="Appreciation & Association with Eminent Personalities" class="w-full h-[28rem] md:h-[40rem] object-cover object-top">
-                        </div>
-                        <div class="md:w-1/2 p-6">
-                            <h3 class="text-2xl font-bold text-navy-header mb-4">Appreciation & Association with Eminent Personalities</h3>
-                            <p class="text-gray-700 text-xl mb-2">Mr. Santosh’s initiatives have received admiration and support from distinguished national figures:</p>
-                            <ul class="text-gray-700 text-xl list-disc list-inside">
-                                <li><strong>Mr. Sanjay Ghodawat</strong> — Visionary entrepreneur & philanthropist, Founder of the Sanjay Ghodawat Group, a diversified enterprise spanning education, FMCG, renewable energy, aviation, and real estate.</li>
-                                <li><strong>Mr. K. Annamalai</strong> — Former IPS Officer & Political Leader, served as Deputy Commissioner of Police, known for his discipline, leadership, and public service commitment.</li>
-                                <li><strong>Honorary Captain Yogendra Singh Yadav, PVC</strong> — India’s youngest Param Vir Chakra awardee, celebrated for extraordinary bravery and sacrifice during the Kargil War.</li>
-                                <li><strong>Captain Naveen Nagappa (Sena Medal)</strong> — Kargil War Hero, honored for courage and devotion to duty, now inspiring youth through motivational leadership and service to the nation.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Achievement 6 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="md:flex flex-row-reverse">
-                        <div class="md:w-1/2">
-                            <img src="6a.jpg" alt="A Legacy of Impact" class="w-full h-[28rem] md:h-[40rem] object-cover">
-                        </div>
-                        <div class="md:w-1/2 p-6">
-                            <h3 class="text-2xl font-bold text-navy-header mb-4">A Legacy of Impact</h3>
-                            <p class="text-gray-700 text-xl">Mr. Santosh’s journey embodies the spirit of visionary leadership and compassionate action, empowering communities and inspiring the next generation of changemakers to build a better tomorrow.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row-reverse">
+              <div class="md:w-1/2">
+                <img src="1a.jpg" alt="Best Leader Award" class="w-full h-[28rem] md:h-[34rem] object-cover">
+              </div>
+              <div class="md:w-1/2 flex flex-col justify-center px-8 py-6 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-navy-header mb-4 uppercase" style="font-family: Lato, sans-serif;">Best Leader Award (2016)</h3>
+                <p class="text-gray-700 text-xl mb-3"><strong>Presented By:</strong> Mr. Kailash Satyarthi & Mr. N. R. Narayana Murthy</p>
+                <p class="text-gray-700 text-xl">Honored for impactful rural development projects in Belgaum, setting new benchmarks in collaborative social change.</p>
+              </div>
             </div>
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+              <div class="md:w-1/2">
+                <img src="2a.jpg" alt="Special Appreciation" class="w-full h-[28rem] md:h-[34rem] object-cover">
+              </div>
+              <div class="md:w-1/2 flex flex-col justify-center px-8 py-6 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-navy-header mb-4 uppercase" style="font-family: Lato, sans-serif;">Special Appreciation</h3>
+                <p class="text-gray-700 text-xl mb-3"><strong>By:</strong> Dr. Gururaj Deshpande & Mrs. Jayshree Deshpande</p>
+                <p class="text-gray-700 text-xl">For exceptional contributions to community empowerment and youth leadership through sustainable rural initiatives.</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row-reverse">
+              <div class="md:w-1/2">
+                <img src="3a.jpg" alt="Startup Recognition" class="w-full h-[28rem] md:h-[34rem] object-cover">
+              </div>
+              <div class="md:w-1/2 flex flex-col justify-center px-8 py-6 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-navy-header mb-4 uppercase" style="font-family: Lato, sans-serif;">Startup Recognition</h3>
+                <p class="text-gray-700 text-xl mb-3"><strong>Platform:</strong> Startup India – Startup Karnataka Yatra (K-Tech, Bangalore)</p>
+                <p class="text-gray-700 text-xl">Recognized for innovative, socially impactful ideas promoting rural entrepreneurship and grassroots innovation.</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+              <div class="md:w-1/2">
+                <img src="4a.jpg" alt="Appreciation & Association" class="w-full h-[28rem] md:h-[34rem] object-cover object-top">
+              </div>
+              <div class="md:w-1/2 flex flex-col justify-center px-8 py-6 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-navy-header mb-4 uppercase" style="font-family: Lato, sans-serif;">Appreciation & Association with Eminent Personalities</h3>
+                <p class="text-gray-700 text-xl mb-3">Admired by distinguished national figures:</p>
+                <ul class="text-gray-700 text-xl list-disc list-inside space-y-1">
+                  <li><strong>Mr. Sanjay Ghodawat</strong> — Visionary entrepreneur & philanthropist.</li>
+                  <li><strong>Mr. K. Annamalai</strong> — Former IPS Officer & Political Leader.</li>
+                  <li><strong>Honorary Capt. Yogendra Singh Yadav, PVC</strong> — India’s youngest Param Vir Chakra awardee.</li>
+                  <li><strong>Capt. Naveen Nagappa (Sena Medal)</strong> — Kargil War Hero & motivational leader.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row-reverse">
+              <div class="md:w-1/2">
+                <img src="5a.jpg" alt="Legacy of Impact" class="w-full h-[30rem] md:h-[38rem] object-cover object-top">
+              </div>
+              <div class="md:w-1/2 flex flex-col justify-center px-8 py-6 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-navy-header mb-4 uppercase" style="font-family: Lato, sans-serif;">A Legacy of Impact</h3>
+                <p class="text-gray-700 text-xl leading-relaxed">
+                  Mr. Santosh’s journey embodies visionary leadership and compassionate action, empowering communities and inspiring the next generation of changemakers.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
 
@@ -225,7 +198,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
                 <!-- Company Info / Logo -->
                 <div class="col-span-2 lg:col-span-1">
-                    <a href="#home" class="text-2xl font-extrabold tracking-widest text-white block mb-3">INFINITY Group</a>
+                    <a href="#home" class="text-2xl font-extrabold tracking-wide text-white block mb-3 whitespace-nowrap">INFINITY GROUP</a>
                     <p class="text-sm text-gray-400">
                         You Dream, We build. Your trusted partner in construction and infrastructure development.
                     </p>
@@ -233,7 +206,7 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">QUICK LINKS</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="aboutus.html" class="hover:text-accent-yellow transition duration-150">About Us</a></li>
                         <li><a href="achievements.html" class="hover:text-accent-yellow transition duration-150">Achievements</a></li>
@@ -243,7 +216,7 @@
 
                 <!-- Services -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">SERVICES</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="pre-construction.html" class="hover:text-accent-yellow transition duration-150">Pre-construction</a></li>
                         <li><a href="execution.html" class="hover:text-accent-yellow transition duration-150">Execution</a></li>
@@ -254,18 +227,23 @@
 
                 <!-- Company -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">COMPANY</h4>
                     <ul class="space-y-2 text-sm">
+
+                        <a href="construction.html" class="hover:text-accent-yellow transition duration-150">Construction Company</a>
                         <li><a href="internship.html" class="hover:text-accent-yellow transition duration-150">Internship & Professional Training</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">CONTACT US</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="feedback.html" class="hover:text-accent-yellow transition duration-150">Feedback</a></li>
                         <li><a href="getintouch.html" class="hover:text-accent-yellow transition duration-150">Get In Touch</a></li>
+                        <li>Landline: 0831-3553030</li>
+                        <li>WhatsApp: 7795615084</li>
+                        <li>Address: Ground Floor, SyNo,54/2A, Kalmeshwar Galli, Shahunagar, Belgaum </li>
                     </ul>
                 </div>
             </div>
